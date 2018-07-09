@@ -4,8 +4,7 @@ using UnityEngine;
 using System.IO;
 
 public class CargarPosicion : MonoBehaviour {
-
-	public static CargarPosicion myPosicion;
+	
 	public GameObject Player;
 	public bool cargar;
 	string filePath;
@@ -17,16 +16,8 @@ public class CargarPosicion : MonoBehaviour {
 	{
 		filePath = Application.dataPath + "/Datos/Jugador/Posicion.json";
 		readFile = File.ReadAllText(filePath);
-		
-		if (myPosicion != null)
-		{
-			Debug.LogWarning("Algo esta mal");
-			return;
-		}
 
-		myPosicion = this;
-
-		if(cargar == true)
+		if(ChangeLevel.instance.cargar == true)
 		{
 			Load();
 		}

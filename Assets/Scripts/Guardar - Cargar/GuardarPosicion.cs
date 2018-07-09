@@ -17,15 +17,6 @@ public class GuardarPosicion : MonoBehaviour {
 		readFile = File.ReadAllText(filePath);
 	}
 
-	public void LoadScene()
-	{
-		Save mySave = JsonUtility.FromJson<Save>(readFile);
-
-		//Carga en la escena en la que estas
-		ChangeLevel.myFade.nextLevel = mySave.escena;
-		
-	}
-
 	public void Save()
 	{
 		Save mySave = JsonUtility.FromJson<Save>(readFile);

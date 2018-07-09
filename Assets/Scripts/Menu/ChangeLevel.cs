@@ -6,8 +6,11 @@ using System.IO;
 
 public class ChangeLevel : MonoBehaviour {
 
-	public static ChangeLevel myFade;
+	public static ChangeLevel instance; 
+	public GameObject fade;
+	public Animator animacionFade;
 	public int nextLevel;
+	public bool cargar;
 	string filePath;
 	string readFile;
 
@@ -17,13 +20,20 @@ public class ChangeLevel : MonoBehaviour {
 		filePath = Application.dataPath + "/Datos/Jugador/Posicion.json";
 		readFile = File.ReadAllText(filePath);
 
-		if (myFade != null)
-		{
-			Debug.LogWarning("Algo esta mal");
-			return;
-		}
+		fade = GameObject.FindGameObjectWithTag("Fade");
+		animacionFade = fade.GetComponent<Animator>();
 
-		myFade = this;
+		instance = this;
+	}
+
+	public void CargarPartida()
+	{
+		cargar = true;
+	}
+
+	public void FadeOut()
+	{
+		animacionFade.SetTrigger("FadeOut");
 	}
 	
 	public void NuevaPartida()
@@ -31,14 +41,21 @@ public class ChangeLevel : MonoBehaviour {
 		SceneManager.LoadScene(1);
 	}
 
-	public void CargarPartida()
+	public void CambiarNivel()
 	{
 		Save mySave = JsonUtility.FromJson<Save>(readFile);
 
-		//Carga en la escena en la que estas
-		nextLevel = mySave.escena;
-		
+		if(cargar == true)
+		{
+			//Carga en la escena en la que estas
+			nextLevel = mySave.escena;
 
-		SceneManager.LoadScene(nextLevel);
+			SceneManager.LoadScene(nextLevel);
+		}
+
+		else if (cargar == false)
+		{
+			NuevaPartida();
+		}
 	}
 }
