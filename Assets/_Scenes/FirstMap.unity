@@ -1748,7 +1748,7 @@ GameObject:
   - component: {fileID: 287544383}
   - component: {fileID: 287544379}
   m_Layer: 0
-  m_Name: Administrador Juego
+  m_Name: Administrador (InGame)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1762,10 +1762,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 287544378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 524aebcd990962947919246dfa778922, type: 3}
+  m_Script: {fileID: 11500000, guid: 244298eb10180184cbb7f5bbea1d3712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 0
 --- !u!4 &287544380
 Transform:
   m_ObjectHideFlags: 0
@@ -1818,6 +1817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 415804}
+  cargar: 0
 --- !u!1 &289707625 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 7a4f87d2e170a3c429ae45adaa517e89, type: 3}
@@ -11288,7 +11288,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 287544379}
-        m_MethodName: MenuPrincipal
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

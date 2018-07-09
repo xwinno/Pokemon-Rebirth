@@ -402,7 +402,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1490982243}
+      - m_Target: {fileID: 0}
         m_MethodName: CargarPartida
         m_Mode: 1
         m_Arguments:
@@ -573,7 +573,7 @@ RectTransform:
   - {fileID: 474938998}
   - {fileID: 1262561501}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -772,7 +772,7 @@ Transform:
   m_Children:
   - {fileID: 282840814}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440592081
 GameObject:
@@ -802,7 +802,7 @@ Transform:
   - {fileID: 170076735}
   - {fileID: 775210517}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477309358
 GameObject:
@@ -936,9 +936,8 @@ GameObject:
   - component: {fileID: 1490982240}
   - component: {fileID: 1490982241}
   - component: {fileID: 1490982242}
-  - component: {fileID: 1490982243}
   m_Layer: 0
-  m_Name: Administrador Juego
+  m_Name: Administrador (General)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,18 +988,6 @@ MonoBehaviour:
   opciones: {fileID: 2116155196}
   idioma: {fileID: 2020738460}
   atras: {fileID: 112983989}
---- !u!114 &1490982243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1490982239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 524aebcd990962947919246dfa778922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextLevel: 0
 --- !u!1 &1614452334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1456,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1490982243}
+      - m_Target: {fileID: 0}
         m_MethodName: NuevaPartida
         m_Mode: 1
         m_Arguments:
@@ -1589,6 +1576,59 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2020738458}
+--- !u!1 &2057851696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2057851699}
+  - component: {fileID: 2057851698}
+  - component: {fileID: 2057851697}
+  m_Layer: 0
+  m_Name: Gestion Partidas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2057851697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057851696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5536cfb72510b45a19807fc4dc8dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2057851698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057851696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 524aebcd990962947919246dfa778922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 0
+--- !u!4 &2057851699
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2057851696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2116155194
 GameObject:
   m_ObjectHideFlags: 0

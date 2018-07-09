@@ -7,6 +7,7 @@ public class CargarPosicion : MonoBehaviour {
 
 	public static CargarPosicion myPosicion;
 	public GameObject Player;
+	public bool cargar;
 	string filePath;
 	string readFile;
 	
@@ -25,7 +26,10 @@ public class CargarPosicion : MonoBehaviour {
 
 		myPosicion = this;
 
-		Load();
+		if(cargar == true)
+		{
+			Load();
+		}
 	}
 
 	void Load()

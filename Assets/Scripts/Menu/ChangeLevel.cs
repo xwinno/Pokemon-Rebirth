@@ -25,7 +25,7 @@ public class ChangeLevel : MonoBehaviour {
 
 		myFade = this;
 	}
-
+	
 	public void NuevaPartida()
 	{
 		SceneManager.LoadScene(1);
@@ -35,14 +35,10 @@ public class ChangeLevel : MonoBehaviour {
 	{
 		Save mySave = JsonUtility.FromJson<Save>(readFile);
 
-			//Carga en la escena en la que estas
-			nextLevel = mySave.escena;
+		//Carga en la escena en la que estas
+		nextLevel = mySave.escena;
+		
 
 		SceneManager.LoadScene(nextLevel);
-	}
-
-	public void MenuPrincipal()
-	{
-		SceneManager.LoadScene(0);
 	}
 }
