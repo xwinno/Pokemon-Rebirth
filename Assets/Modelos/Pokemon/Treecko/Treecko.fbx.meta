@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 4f8ef1d7a3e766c40822319eea9e46bf
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: Jaw
+    100006: Jaw_end
+    100008: LArm
+    100010: LFingerA1
+    100012: LFingerA2
+    100014: LFingerA2_end
+    100016: LFingerB1
+    100018: LFingerB2
+    100020: LFingerB2_end
+    100022: LFingerC1
+    100024: LFingerC2
+    100026: LFingerC2_end
+    100028: LFoot
+    100030: LForeArm
+    100032: LHand
+    100034: LLeg
+    100036: LShoulder
+    100038: LTail1
+    100040: LTail2
+    100042: LTail3
+    100044: LTail4
+    100046: LTail4_end
+    100048: LThigh
+    100050: LToe1
+    100052: LToe2
+    100054: LToe2_end
+    100056: Origin
+    100058: pm0252_00
+    100060: pm0252_00_BodySkin
+    100062: pm0252_00_BodySkin_end
+    100064: pm0252_00_IrisSkin
+    100066: pm0252_00_IrisSkin_end
+    100068: RArm
+    100070: RFingerA1
+    100072: RFingerA2
+    100074: RFingerA2_end
+    100076: RFingerB1
+    100078: RFingerB2
+    100080: RFingerB2_end
+    100082: RFingerC1
+    100084: RFingerC2
+    100086: RFingerC2_end
+    100088: RFoot
+    100090: RForeArm
+    100092: RHand
+    100094: RLeg
+    100096: RShoulder
+    100098: RTail1
+    100100: RTail2
+    100102: RTail3
+    100104: RTail4
+    100106: RTail4_end
+    100108: RThigh
+    100110: RToe1
+    100112: RToe2
+    100114: RToe2_end
+    100116: Spine1
+    100118: Spine2
+    100120: //RootNode
+    100122: Treecko
+    100124: Treecko_skeleton
+    100126: Waist
+    400000: Head
+    400002: Hips
+    400004: Jaw
+    400006: Jaw_end
+    400008: LArm
+    400010: LFingerA1
+    400012: LFingerA2
+    400014: LFingerA2_end
+    400016: LFingerB1
+    400018: LFingerB2
+    400020: LFingerB2_end
+    400022: LFingerC1
+    400024: LFingerC2
+    400026: LFingerC2_end
+    400028: LFoot
+    400030: LForeArm
+    400032: LHand
+    400034: LLeg
+    400036: LShoulder
+    400038: LTail1
+    400040: LTail2
+    400042: LTail3
+    400044: LTail4
+    400046: LTail4_end
+    400048: LThigh
+    400050: LToe1
+    400052: LToe2
+    400054: LToe2_end
+    400056: Origin
+    400058: pm0252_00
+    400060: pm0252_00_BodySkin
+    400062: pm0252_00_BodySkin_end
+    400064: pm0252_00_IrisSkin
+    400066: pm0252_00_IrisSkin_end
+    400068: RArm
+    400070: RFingerA1
+    400072: RFingerA2
+    400074: RFingerA2_end
+    400076: RFingerB1
+    400078: RFingerB2
+    400080: RFingerB2_end
+    400082: RFingerC1
+    400084: RFingerC2
+    400086: RFingerC2_end
+    400088: RFoot
+    400090: RForeArm
+    400092: RHand
+    400094: RLeg
+    400096: RShoulder
+    400098: RTail1
+    400100: RTail2
+    400102: RTail3
+    400104: RTail4
+    400106: RTail4_end
+    400108: RThigh
+    400110: RToe1
+    400112: RToe2
+    400114: RToe2_end
+    400116: Spine1
+    400118: Spine2
+    400120: //RootNode
+    400122: Treecko
+    400124: Treecko_skeleton
+    400126: Waist
+    2100000: pm0252_00_Body1.tga
+    2100002: pm0252_00_Eye1.tga
+    2100004: pm0252_00_Iris1.tga
+    4300000: Treecko
+    7400000: Treecko - Idle
+    7400002: Treecko - Run
+    7400004: Treecko - Walk
+    9500000: //RootNode
+    13700000: Treecko
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0252_00_Body1.tga
+    second: {fileID: 2100000, guid: 45778cd99afa5784495a732ea532a141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0252_00_Eye1.tga
+    second: {fileID: 2100000, guid: 209e938017bde5143aedbabcc2edf110, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0252_00_Iris1.tga
+    second: {fileID: 2100000, guid: 37ebec60d6a84e04d83bd7c897fd600b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Treecko - Idle
+      takeName: Treecko_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 49
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Treecko - Run
+      takeName: Treecko_skeleton|Run
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Treecko - Walk
+      takeName: Treecko_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 23
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

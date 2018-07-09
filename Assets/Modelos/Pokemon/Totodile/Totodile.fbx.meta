@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 2c56279f597b21b4dbfd01f209f4265d
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: Jaw
+    100006: Jaw_end
+    100008: LArm
+    100010: LFoot
+    100012: LForeArm
+    100014: LHand
+    100016: LHand_end
+    100018: LLeg
+    100020: LShoulder
+    100022: LThigh
+    100024: LToe
+    100026: LToe_end
+    100028: Neck
+    100030: Origin
+    100032: pm0158_00
+    100034: pm0158_00_BodySkin
+    100036: pm0158_00_BodySkin_end
+    100038: pm0158_00_IrisSkin
+    100040: pm0158_00_IrisSkin_end
+    100042: RArm
+    100044: RFoot
+    100046: RForeArm
+    100048: RHand
+    100050: RHand_end
+    100052: RLeg
+    100054: RShoulder
+    100056: RThigh
+    100058: RToe
+    100060: RToe_end
+    100062: Spine
+    100064: Tail1
+    100066: Tail2
+    100068: Tail2_end
+    100070: Totodile
+    100072: //RootNode
+    100074: Totodile_skeleton
+    100076: Waist
+    400000: Head
+    400002: Hips
+    400004: Jaw
+    400006: Jaw_end
+    400008: LArm
+    400010: LFoot
+    400012: LForeArm
+    400014: LHand
+    400016: LHand_end
+    400018: LLeg
+    400020: LShoulder
+    400022: LThigh
+    400024: LToe
+    400026: LToe_end
+    400028: Neck
+    400030: Origin
+    400032: pm0158_00
+    400034: pm0158_00_BodySkin
+    400036: pm0158_00_BodySkin_end
+    400038: pm0158_00_IrisSkin
+    400040: pm0158_00_IrisSkin_end
+    400042: RArm
+    400044: RFoot
+    400046: RForeArm
+    400048: RHand
+    400050: RHand_end
+    400052: RLeg
+    400054: RShoulder
+    400056: RThigh
+    400058: RToe
+    400060: RToe_end
+    400062: Spine
+    400064: Tail1
+    400066: Tail2
+    400068: Tail2_end
+    400070: Totodile
+    400072: //RootNode
+    400074: Totodile_skeleton
+    400076: Waist
+    2100000: pm0158_00_Body1.tga
+    2100002: pm0158_00_Eye1.tga
+    2100004: pm0158_00_Iris1.tga
+    4300000: Totodile
+    7400000: Totodile - Idle
+    7400002: Totodile - Run
+    7400004: Totodile - Walk
+    9500000: //RootNode
+    13700000: Totodile
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0158_00_Body1.tga
+    second: {fileID: 2100000, guid: 869e82c7a4b618a4e9509f07ffbbd990, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0158_00_Eye1.tga
+    second: {fileID: 2100000, guid: 8525d99ed8e398c45935e446cffe2ef5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Totodile - Idle
+      takeName: Totodile_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Totodile - Run
+      takeName: Totodile_skeleton|Run
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Totodile - Walk
+      takeName: Totodile_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
