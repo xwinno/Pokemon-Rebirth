@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
+	public Animator animacion;
 	public Camera PlayerCam;
 	public float sensibilidadH;
 	public float sensibilidadV;
@@ -21,6 +22,10 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+		//Movimiento con mecanism
+		//animacion.SetFloat("X", Input.GetAxis("Horizontal"));
+		//animacion.SetFloat("Z", Input.GetAxis("Vertical"));
+
 		//Recoje el movimiento del raton
 		h = sensibilidadH * Input.GetAxis("Mouse X");
 		v = sensibilidadV * Input.GetAxis("Mouse Y");
@@ -49,6 +54,18 @@ public class CameraController : MonoBehaviour {
 		{
 			velocidad = 4;
 		}
+
+		//Agacharse
+		if(Input.GetKey(KeyCode.LeftShift))
+		{
+			this.gameObject.GetComponent<Animator>().SetBool("Crouch", true);
+		}
+
+		else if(Input.GetKeyUp(KeyCode.LeftShift))
+		{
+			this.gameObject.GetComponent<Animator>().SetBool("Crouch", false);
+		}
+
 
 		//Desbloquea el cursor
 		if(Input.GetKeyDown(KeyCode.Escape))
