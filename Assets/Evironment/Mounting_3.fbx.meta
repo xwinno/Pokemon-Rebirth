@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 279e04fc91f419442bb0b804590105e8
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -10,7 +10,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Mounting_3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown.14
+    second: {fileID: 2100000, guid: a40ba298c50462f439aba9accd7e3a9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown.15
+    second: {fileID: 2100000, guid: 6d82dd39062176c469021913b36a8a05, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,6 +71,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

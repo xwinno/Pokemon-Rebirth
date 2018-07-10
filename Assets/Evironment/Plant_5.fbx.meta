@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 7adc1583ba776d244938741ffd75ee08
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -10,7 +10,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plant_5
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green.7
+    second: {fileID: 2100000, guid: a3803931d6237c34cb51a80df154a9c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Purple.2
+    second: {fileID: 2100000, guid: 27737ba9965480b4998b08888baf791b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,6 +71,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

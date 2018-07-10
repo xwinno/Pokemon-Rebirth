@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: a0a895af95c4199439cca3698967eeac
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: Leaves
     100002: Leaves_1
@@ -30,7 +30,22 @@ ModelImporter:
     4300002: Leaves_2
     4300004: Leaves_3
     4300006: Tree_1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown.2
+    second: {fileID: 2100000, guid: 194bac88c0122d5448a28fe8afbe968f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown.3
+    second: {fileID: 2100000, guid: 23da36ddc7a41a141bef92623b56dd8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green.10
+    second: {fileID: 2100000, guid: 1fe9bd6c4e665944e88dd61fae112761, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -81,6 +96,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 52bb1488138c1e14ba68c0d05346ef58
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
@@ -10,7 +10,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Bush_3
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown.9
+    second: {fileID: 2100000, guid: 1942df844cecf7943857746bc3c98d3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green.1
+    second: {fileID: 2100000, guid: 1534471e30288874cb2cf47a6e21ea64, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -61,6 +71,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
