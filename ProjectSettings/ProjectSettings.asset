@@ -234,7 +234,7 @@ PlayerSettings:
   appleEnableAutomaticSigning: 0
   iOSRequireARKit: 0
   appleEnableProMotion: 0
-  vulkanEditorSupport: 1
+  vulkanEditorSupport: 0
   clonedFromGUID: c71a6e77368cc6048998f34f4bbe2b86
   templatePackageId: com.unity.template.hd@1.0.3
   templateDefaultScene: Assets/Scenes/SampleScene.unity

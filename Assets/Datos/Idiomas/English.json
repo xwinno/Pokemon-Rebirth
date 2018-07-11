@@ -4,6 +4,9 @@
     "cargarPartida": "Load Game",
     "guardarPartida": "Save Game",
     "opciones": "Options",
+    "calidad": "Quality",
     "atras": "Back",
-    "salir": "Exit Game"
+    "salir": "Exit Game",
+    "media": "Medium",
+    "baja": "Low"
 }

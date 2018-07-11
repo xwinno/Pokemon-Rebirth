@@ -17,8 +17,11 @@ public class Language : MonoBehaviour {
 	public Text nuevaPartida;
 	public Text cargarPartida;
 	public Text opciones;
+	public Text calidad;
 	public Text idioma;
 	public Text atras;
+	public Text media;
+	public Text baja;
 
 
 	void Awake()
@@ -55,8 +58,11 @@ public class Language : MonoBehaviour {
 			nuevaPartida.text = idiomaEspañol.nuevaPartida;
 			cargarPartida.text = idiomaEspañol.cargarPartida;
 			opciones.text = idiomaEspañol.opciones;
+			calidad.text = idiomaEspañol.calidad;
 			idioma.text = idiomaEspañol.idioma;
 			atras.text = idiomaEspañol.atras;
+			media.text = idiomaEspañol.media;
+			baja.text = idiomaEspañol.baja;
 		}
 
 		else if(english == true)
@@ -64,8 +70,11 @@ public class Language : MonoBehaviour {
 			nuevaPartida.text = idiomaEnglish.nuevaPartida;
 			cargarPartida.text = idiomaEnglish.cargarPartida;
 			opciones.text = idiomaEnglish.opciones;
+			calidad.text = idiomaEnglish.calidad;
 			idioma.text = idiomaEnglish.idioma;
 			atras.text = idiomaEnglish.atras;
+			media.text = idiomaEnglish.media;
+			baja.text = idiomaEnglish.baja;
 		}
 	}
 
@@ -84,8 +93,11 @@ public class Language : MonoBehaviour {
 			nuevaPartida.text = idiomaEnglish.nuevaPartida;
 			cargarPartida.text = idiomaEnglish.cargarPartida;
 			opciones.text = idiomaEnglish.opciones;
+			calidad.text = idiomaEnglish.calidad;
 			idioma.text = idiomaEnglish.idioma;
 			atras.text = idiomaEnglish.atras;
+			media.text = idiomaEnglish.media;
+			baja.text = idiomaEnglish.baja;
 
 			//Cambia el idioma elegido
 			español = false;
@@ -107,8 +119,13 @@ public class Language : MonoBehaviour {
 			nuevaPartida.text = idiomaEspañol.nuevaPartida;
 			cargarPartida.text = idiomaEspañol.cargarPartida;
 			opciones.text = idiomaEspañol.opciones;
+			calidad.text = idiomaEspañol.calidad;
 			idioma.text = idiomaEspañol.idioma;
 			atras.text = idiomaEspañol.atras;
+			media.text = idiomaEspañol.media;
+			baja.text = idiomaEspañol.baja;
+
+
 			//Cambia el idioma elegido
 			español = true;
 			english = false;
@@ -132,8 +149,11 @@ public class IdiomaPrincipal {
 	public string cargarPartida;
 	public string guardarPartida;
 	public string opciones;
+	public string calidad;
 	public string atras;
 	public string salir;
+	public string media;
+	public string baja;
 }
 
 [System.Serializable]

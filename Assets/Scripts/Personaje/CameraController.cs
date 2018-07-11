@@ -56,12 +56,12 @@ public class CameraController : MonoBehaviour {
 		}
 
 		//Agacharse
-		if(Input.GetKey(KeyCode.LeftShift))
+		if(Input.GetKey(KeyCode.Tab))
 		{
 			this.gameObject.GetComponent<Animator>().SetBool("Crouch", true);
 		}
 
-		else if(Input.GetKeyUp(KeyCode.LeftShift))
+		else if(Input.GetKeyUp(KeyCode.Tab))
 		{
 			this.gameObject.GetComponent<Animator>().SetBool("Crouch", false);
 		}

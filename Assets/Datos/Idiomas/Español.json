@@ -4,6 +4,9 @@
     "cargarPartida": "Cargar Partida",
     "guardarPartida": "Guardar Partida",
     "opciones": "Opciones",
+    "calidad": "Calidad",
     "atras": "Atras",
-    "salir": "Salir"
+    "salir": "Salir",
+    "media": "Media",
+    "baja": "Baja"
 }
