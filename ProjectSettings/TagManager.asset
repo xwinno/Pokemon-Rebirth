@@ -7,6 +7,7 @@ TagManager:
   - Tierra
   - Fade
   - Volume
+  - eKey
   layers:
   - Default
   - TransparentFX

@@ -5,14 +5,30 @@ using UnityEngine.UI;
 
 public class EquipoPokemonUI : MonoBehaviour {
 
+	public GameObject slotControl;
 	public Animator firstSlot;
 	public Animator secondSlot;
 	public Animator thirdSlot;
 	public Animator fourthSlot;
 	public Animator fiveSlot;
 	public Animator sixSlot;
+	PokemonData pokemon;
+	PokemonSlot[] slots;
+	EquipoPokemon equipo;
 	bool menuOpen;
 
+	void Awake()
+	{
+		equipo = EquipoPokemon.instace;
+	}
+
+	void Start()
+	{
+		slots = slotControl.GetComponentsInChildren<PokemonSlot>();
+
+		//Edit
+		equipo.actualizarCallback += UpdateUI;
+	}
 
 	void Update()
 	{
@@ -38,6 +54,17 @@ public class EquipoPokemonUI : MonoBehaviour {
 			sixSlot.SetBool("Slide",false);
 
 			menuOpen = false;
+		}
+	}
+
+	void UpdateUI()
+	{
+		for (int i = 0; i < slots.Length; i++)
+		{
+			if(i < equipo.myTeam.Count)
+			{
+				slots[i].AñadirPokemon(equipo.myTeam[i]);
+			}
 		}
 	}
 }

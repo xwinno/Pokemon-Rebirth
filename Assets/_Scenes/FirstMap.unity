@@ -222,13 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6489b86ec52ef4582da69382bf0a74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myTeam:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  myTeam: []
 --- !u!1 &10293269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 9f2945cb0e1661c499a6089aa60308eb,
@@ -317,6 +311,7 @@ GameObject:
   - component: {fileID: 23715590}
   - component: {fileID: 23715589}
   - component: {fileID: 23715591}
+  - component: {fileID: 23715592}
   m_Layer: 5
   m_Name: FirstSlot
   m_TagString: Untagged
@@ -395,6 +390,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &23715592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23715587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4719d99f37d50144a687358cc5ed70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 477656988}
 --- !u!1 &28064133
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +907,7 @@ RectTransform:
   - {fileID: 291171777}
   - {fileID: 1204408377}
   - {fileID: 1136010122}
+  - {fileID: 356736586}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2432,6 +2440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4650f32e9cc760f4bbe77f2cd2fe13d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotControl: {fileID: 1204408376}
   firstSlot: {fileID: 23715591}
   secondSlot: {fileID: 803862549}
   thirdSlot: {fileID: 1860297986}
@@ -2900,6 +2909,94 @@ Transform:
   m_Father: {fileID: 465571717}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &356736585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 356736586}
+  - component: {fileID: 356736588}
+  - component: {fileID: 356736587}
+  - component: {fileID: 356736589}
+  m_Layer: 5
+  m_Name: Key (E)
+  m_TagString: eKey
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &356736586
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356736585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 136616510}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -584.9, y: -262.9}
+  m_SizeDelta: {x: 145.1, y: 145.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &356736587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356736585}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: e51dc2a75773bc44fb4fc5eb1e4e0b8b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &356736588
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356736585}
+  m_CullTransparentMesh: 0
+--- !u!95 &356736589
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 356736585}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 18f013cdc06840b4889b6b607772f50b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &360102756
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,8 +3008,10 @@ GameObject:
   - component: {fileID: 360102761}
   - component: {fileID: 360102760}
   - component: {fileID: 360102762}
+  - component: {fileID: 360102763}
   - component: {fileID: 360102758}
   - component: {fileID: 360102757}
+  - component: {fileID: 360102759}
   m_Layer: 0
   m_Name: Totodile
   m_TagString: Untagged
@@ -2954,6 +3053,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &360102759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360102756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dcede3141e74741b439afe6d95dab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eKey: {fileID: 356736589}
+  radio: 2
+  pokemon: {fileID: 11400000, guid: 3ff9fd17d0b55694f895bbaf43a9fa64, type: 2}
 --- !u!137 &360102760
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -3058,6 +3171,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5269985, y: 0.5945573, z: 0.68849343}
   m_Center: {x: 0.006140709, y: 0.284132, z: -0.00805524}
+--- !u!135 &360102763
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360102756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.97
+  m_Center: {x: 0.0037949183, y: 0, z: 0.011436743}
 --- !u!1 &362564975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3773,7 +3898,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 477656986}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -3786,7 +3911,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6a5ac3b8d979f4b4f94bb1f511bd461f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5950,6 +6075,7 @@ GameObject:
   - component: {fileID: 803862548}
   - component: {fileID: 803862547}
   - component: {fileID: 803862549}
+  - component: {fileID: 803862550}
   m_Layer: 5
   m_Name: SecondSlot
   m_TagString: Untagged
@@ -6028,6 +6154,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &803862550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803862545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4719d99f37d50144a687358cc5ed70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 1054122879}
 --- !u!1 &805132203
 GameObject:
   m_ObjectHideFlags: 0
@@ -6184,8 +6322,10 @@ GameObject:
   - component: {fileID: 817883653}
   - component: {fileID: 817883657}
   - component: {fileID: 817883656}
+  - component: {fileID: 817883659}
   - component: {fileID: 817883655}
   - component: {fileID: 817883654}
+  - component: {fileID: 817883658}
   m_Layer: 0
   m_Name: Torchic
   m_TagString: Untagged
@@ -6354,6 +6494,32 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000037949183, y: 0.0019948045, z: 0.00011436734}
     m_Extent: {x: 0.0010893277, y: 0.0020776251, z: 0.0012227246}
   m_DirtyAABB: 0
+--- !u!114 &817883658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817883652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dcede3141e74741b439afe6d95dab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eKey: {fileID: 356736589}
+  radio: 2
+  pokemon: {fileID: 11400000, guid: c366f3a195b715840b38075e11bd5c30, type: 2}
+--- !u!135 &817883659
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 817883652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.97
+  m_Center: {x: 0.0037949183, y: 0, z: 0.011436743}
 --- !u!1 &818779714
 GameObject:
   m_ObjectHideFlags: 0
@@ -6885,6 +7051,7 @@ GameObject:
   - component: {fileID: 902725870}
   - component: {fileID: 902725869}
   - component: {fileID: 902725871}
+  - component: {fileID: 902725872}
   m_Layer: 5
   m_Name: SixSlot
   m_TagString: Untagged
@@ -6963,6 +7130,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &902725872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 902725867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4719d99f37d50144a687358cc5ed70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 2126686872}
 --- !u!1001 &909488568
 Prefab:
   m_ObjectHideFlags: 0
@@ -8320,6 +8499,7 @@ GameObject:
   - component: {fileID: 1093812430}
   - component: {fileID: 1093812429}
   - component: {fileID: 1093812431}
+  - component: {fileID: 1093812432}
   m_Layer: 5
   m_Name: FourthSlot
   m_TagString: Untagged
@@ -8398,6 +8578,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1093812432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093812427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4719d99f37d50144a687358cc5ed70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 1866812669}
 --- !u!1 &1094473588
 GameObject:
   m_ObjectHideFlags: 0
@@ -12218,6 +12410,7 @@ GameObject:
   - component: {fileID: 1730280740}
   - component: {fileID: 1730280739}
   - component: {fileID: 1730280741}
+  - component: {fileID: 1730280742}
   m_Layer: 5
   m_Name: FiveSlot
   m_TagString: Untagged
@@ -12296,6 +12489,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1730280742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730280737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4719d99f37d50144a687358cc5ed70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 752999906}
 --- !u!1 &1748114520
 GameObject:
   m_ObjectHideFlags: 0
@@ -12966,8 +13171,10 @@ GameObject:
   - component: {fileID: 1834570085}
   - component: {fileID: 1834570089}
   - component: {fileID: 1834570088}
+  - component: {fileID: 1834570091}
   - component: {fileID: 1834570087}
   - component: {fileID: 1834570086}
+  - component: {fileID: 1834570090}
   m_Layer: 0
   m_Name: Turtwig
   m_TagString: Untagged
@@ -13119,6 +13326,32 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000033344375, y: 0.0020046632, z: 0.0005490988}
     m_Extent: {x: 0.0012717433, y: 0.0021499812, z: 0.0020424407}
   m_DirtyAABB: 0
+--- !u!114 &1834570090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1834570084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0dcede3141e74741b439afe6d95dab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eKey: {fileID: 356736589}
+  radio: 2
+  pokemon: {fileID: 11400000, guid: c3ced0b46b215a64892cbb90f79a8908, type: 2}
+--- !u!135 &1834570091
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1834570084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.97
+  m_Center: {x: 0.0037949183, y: 0, z: 0.011436743}
 --- !u!1 &1839769838
 GameObject:
   m_ObjectHideFlags: 0
@@ -13223,6 +13456,7 @@ GameObject:
   - component: {fileID: 1860297985}
   - component: {fileID: 1860297984}
   - component: {fileID: 1860297986}
+  - component: {fileID: 1860297987}
   m_Layer: 5
   m_Name: ThirdSlot
   m_TagString: Untagged
@@ -13301,6 +13535,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1860297987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1860297982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4719d99f37d50144a687358cc5ed70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icono: {fileID: 1428759894}
 --- !u!1 &1860600420
 GameObject:
   m_ObjectHideFlags: 0
