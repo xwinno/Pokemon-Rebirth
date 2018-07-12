@@ -12,6 +12,8 @@ public class CameraController : MonoBehaviour {
 
 	float h;
 	float v;
+	bool crouch;
+	bool cursorUnlocked;
 
 	void Start()
 	{
@@ -56,21 +58,35 @@ public class CameraController : MonoBehaviour {
 		}
 
 		//Agacharse
-		if(Input.GetKey(KeyCode.Tab))
+		if(Input.GetKeyDown(KeyCode.C) && crouch == false)
 		{
 			this.gameObject.GetComponent<Animator>().SetBool("Crouch", true);
+
+			crouch = true;
 		}
 
-		else if(Input.GetKeyUp(KeyCode.Tab))
+		else if(Input.GetKeyDown(KeyCode.C) && crouch == true)
 		{
 			this.gameObject.GetComponent<Animator>().SetBool("Crouch", false);
+
+			crouch = false;
 		}
 
 
 		//Desbloquea el cursor
-		if(Input.GetKeyDown(KeyCode.Escape))
+		if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == false)
 		{
 			Cursor.lockState = CursorLockMode.None;
+
+			cursorUnlocked = true;
+		}
+
+		//Bloquea el cursor
+		else if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == true)
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+
+			cursorUnlocked = false;
 		}
 	}
 }
