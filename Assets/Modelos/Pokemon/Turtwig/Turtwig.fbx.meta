@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 156671c85fbe6a745ab0b15788610888
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: FeelerA1
+    100002: FeelerA2
+    100004: FeelerA3
+    100006: FeelerA3_end
+    100008: FeelerB
+    100010: FeelerB_end
+    100012: Head
+    100014: Hips
+    100016: Jaw
+    100018: Jaw_end
+    100020: LArm
+    100022: LFeeler1
+    100024: LFeeler2
+    100026: LFeeler2_end
+    100028: LFoot
+    100030: LFoot_end
+    100032: LForeArm
+    100034: LHand
+    100036: LHand_end
+    100038: LLeg
+    100040: LShoulder
+    100042: LThigh
+    100044: Neck
+    100046: Origin
+    100048: pm0387_00
+    100050: pm0387_00_BodySkin
+    100052: pm0387_00_BodySkin_end
+    100054: pm0387_00_IrisSkin
+    100056: pm0387_00_IrisSkin_end
+    100058: RArm
+    100060: RFeeler1
+    100062: RFeeler2
+    100064: RFeeler2_end
+    100066: RFoot
+    100068: RFoot_end
+    100070: RForeArm
+    100072: RHand
+    100074: RHand_end
+    100076: RLeg
+    100078: RShoulder
+    100080: RThigh
+    100082: Spine1
+    100084: Spine2
+    100086: Tail
+    100088: Tail_end
+    100090: Turtwig
+    100092: //RootNode
+    100094: Turtwig_skeleton
+    100096: Waist
+    400000: FeelerA1
+    400002: FeelerA2
+    400004: FeelerA3
+    400006: FeelerA3_end
+    400008: FeelerB
+    400010: FeelerB_end
+    400012: Head
+    400014: Hips
+    400016: Jaw
+    400018: Jaw_end
+    400020: LArm
+    400022: LFeeler1
+    400024: LFeeler2
+    400026: LFeeler2_end
+    400028: LFoot
+    400030: LFoot_end
+    400032: LForeArm
+    400034: LHand
+    400036: LHand_end
+    400038: LLeg
+    400040: LShoulder
+    400042: LThigh
+    400044: Neck
+    400046: Origin
+    400048: pm0387_00
+    400050: pm0387_00_BodySkin
+    400052: pm0387_00_BodySkin_end
+    400054: pm0387_00_IrisSkin
+    400056: pm0387_00_IrisSkin_end
+    400058: RArm
+    400060: RFeeler1
+    400062: RFeeler2
+    400064: RFeeler2_end
+    400066: RFoot
+    400068: RFoot_end
+    400070: RForeArm
+    400072: RHand
+    400074: RHand_end
+    400076: RLeg
+    400078: RShoulder
+    400080: RThigh
+    400082: Spine1
+    400084: Spine2
+    400086: Tail
+    400088: Tail_end
+    400090: Turtwig
+    400092: //RootNode
+    400094: Turtwig_skeleton
+    400096: Waist
+    2100000: pm0387_00_Body1.tga
+    2100002: pm0387_00_Eye1.tga
+    2100004: pm0387_00_Iris1.tga
+    4300000: Turtwig
+    7400000: Turtwig - Idle
+    7400002: Turtwig - Run
+    7400004: Turtwig - Walk
+    9500000: //RootNode
+    13700000: Turtwig
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Turtwig - Idle
+      takeName: Turtwig_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Turtwig - Run
+      takeName: Turtwig_skeleton|Run
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Turtwig - Walk
+      takeName: Turtwig_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 17
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

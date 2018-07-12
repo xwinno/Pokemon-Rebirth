@@ -1,39 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EquipoPokemonUI : MonoBehaviour {
 
-	public Animator FirstSlot;
-	public Animator SecondSlot;
-	public Animator ThirdSlot;
-	public Animator FourthSlot;
-	public Animator FiveSlot;
-	public Animator SixSlot;
+	public Animator firstSlot;
+	public Animator secondSlot;
+	public Animator thirdSlot;
+	public Animator fourthSlot;
+	public Animator fiveSlot;
+	public Animator sixSlot;
 	bool menuOpen;
+
 
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.Tab) && menuOpen == false)
 		{
-			FirstSlot.SetBool("Slide",true);
-			SecondSlot.SetBool("Slide",true);
-			ThirdSlot.SetBool("Slide",true);
-			FourthSlot.SetBool("Slide",true);
-			FiveSlot.SetBool("Slide",true);
-			SixSlot.SetBool("Slide",true);
+			firstSlot.SetBool("Slide",true);
+			secondSlot.SetBool("Slide",true);
+			thirdSlot.SetBool("Slide",true);
+			fourthSlot.SetBool("Slide",true);
+			fiveSlot.SetBool("Slide",true);
+			sixSlot.SetBool("Slide",true);
 
 			menuOpen = true;
 		}
 
 		else if(Input.GetKeyDown(KeyCode.Tab) && menuOpen == true)
 		{
-			FirstSlot.SetBool("Slide",false);
-			SecondSlot.SetBool("Slide",false);
-			ThirdSlot.SetBool("Slide",false);
-			FourthSlot.SetBool("Slide",false);
-			FiveSlot.SetBool("Slide",false);
-			SixSlot.SetBool("Slide",false);
+			firstSlot.SetBool("Slide",false);
+			secondSlot.SetBool("Slide",false);
+			thirdSlot.SetBool("Slide",false);
+			fourthSlot.SetBool("Slide",false);
+			fiveSlot.SetBool("Slide",false);
+			sixSlot.SetBool("Slide",false);
 
 			menuOpen = false;
 		}
