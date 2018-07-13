@@ -23,22 +23,53 @@ public class MenuInGame : MonoBehaviour {
 	void Awake()
 	{
 		//Variables de carga de datos
-		filePathEspañol = Application.dataPath + "/Datos/Idiomas/Español.json";
-		filePathEnglish = Application.dataPath + "/Datos/Idiomas/English.json";
-		filePathElegido = Application.dataPath + "/Datos/Idiomas/IdiomaElegido.json";
+		filePathEspañol = Application.streamingAssetsPath + "/Idiomas/Español.json";
+		filePathEnglish = Application.streamingAssetsPath + "/Idiomas/English.json";
+		filePathElegido = Application.persistentDataPath + "/Save/IdiomaElegido.json";
 		readEspañol = File.ReadAllText(filePathEspañol);
 		readEnglish = File.ReadAllText(filePathEnglish);
-		readElegido = File.ReadAllText(filePathElegido);
 
-		//Carga el texto
-		IdiomaElegido elegido = JsonUtility.FromJson<IdiomaElegido>(readElegido);
+		//Crea el archivo
+		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+		CrearArchivo();
+	}
 
-		//Carga el ultimo idioma seleccionado
-		español = elegido.español;
-		english = elegido.english;
+	void CrearArchivo()
+	{
+       if (!File.Exists(filePathElegido))
+	   {	
+		    //Crea el archivo de guardado
+		    File.Copy(Application.streamingAssetsPath + "/Idiomas/IdiomaElegido.json", filePathElegido);
 
-		//Aplica el ultimo idioma seleccionado
-		UltimoIdioma();
+			//Lee el archivo
+			readElegido = File.ReadAllText(filePathElegido);
+			
+			//Carga el texto
+			IdiomaElegido elegido = JsonUtility.FromJson<IdiomaElegido>(readElegido);
+
+			//Carga el ultimo idioma seleccionado
+			español = elegido.español;
+			english = elegido.english;
+			
+			//Avisa de la creacion del archivo
+		    Debug.Log("Created");
+	   }
+
+	   else
+	   {
+		    //Lee el archivo
+		    readElegido = File.ReadAllText(filePathElegido);
+
+			//Carga el texto
+			IdiomaElegido elegido = JsonUtility.FromJson<IdiomaElegido>(readElegido);
+
+			//Carga el ultimo idioma seleccionado
+			español = elegido.español;
+			english = elegido.english;
+
+			//Aplica el ultimo idioma seleccionado
+			UltimoIdioma();
+	   }
 	}
 
 	void UltimoIdioma()

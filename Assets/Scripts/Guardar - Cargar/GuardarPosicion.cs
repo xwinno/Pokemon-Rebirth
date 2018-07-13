@@ -13,8 +13,29 @@ public class GuardarPosicion : MonoBehaviour {
 
 	void Awake()
 	{
-		filePath = Application.dataPath + "/Datos/Jugador/Posicion.json";
-		readFile = File.ReadAllText(filePath);
+		filePath = Application.persistentDataPath + "/Save/Posicion.json";
+		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+		CrearArchivo();
+	}
+
+	void CrearArchivo()
+	{
+       if (!File.Exists(filePath))
+	   {
+		   //Crea el archivo de guardado
+		   File.Copy(Application.streamingAssetsPath + "/Jugador/Posicion.json", filePath);
+		   
+		   //Lee el archivo
+		   readFile = File.ReadAllText(filePath);
+
+		   //Avisa de la creacion del archivo
+		   Debug.Log("Created");
+	   }
+
+	   else
+	   {	//Lee el archivo
+		    readFile = File.ReadAllText(filePath);
+	   }
 	}
 
 	public void Save()

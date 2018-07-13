@@ -25,8 +25,33 @@ public class Opciones : MonoBehaviour {
 
 	void Awake()
 	{
-		filePath = Application.dataPath + "/Datos/Jugador/ConfiguracionGrafica.json";
-		readFile = File.ReadAllText(filePath);
+		filePath = Application.persistentDataPath + "/Save/ConfiguracionGrafica.json";
+
+		//Crea el archivo
+		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+		CrearArchivo();
+	}
+
+
+	void CrearArchivo()
+	{
+       if (!File.Exists(filePath))
+	   {	
+		   //Crea el archivo de guardado
+		   File.Copy(Application.streamingAssetsPath + "/Jugador/ConfiguracionGrafica.json",filePath);
+			
+		   //Lee el archivo
+		   readFile = File.ReadAllText(filePath);
+
+		   //Avisa de la creacion del archivo
+		   Debug.Log("Created");
+	   }
+
+	   else
+	   {	
+		   //Lee el archivo
+		    readFile = File.ReadAllText(filePath);
+	   }
 	}
 
 	public void MenuOpciones()

@@ -6,7 +6,6 @@ using System.IO;
 public class CargarPosicion : MonoBehaviour {
 	
 	public GameObject Player;
-	public bool cargar;
 	string filePath;
 	string readFile;
 	
@@ -14,13 +13,35 @@ public class CargarPosicion : MonoBehaviour {
 
 	void Awake()
 	{
-		filePath = Application.dataPath + "/Datos/Jugador/Posicion.json";
-		readFile = File.ReadAllText(filePath);
+		filePath = Application.persistentDataPath + "/Save/Posicion.json";
+		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+		CrearArchivo();;
 
 		if(ChangeLevel.instance.cargar == true)
 		{
 			Load();
 		}
+	}
+
+	void CrearArchivo()
+	{
+       if (!File.Exists(filePath))
+	   {	
+		   //Crea el archivo de guardado
+		   File.Copy(Application.streamingAssetsPath + "/Jugador/Posicion.json", filePath);
+
+		   //Lee el archivo
+		   readFile = File.ReadAllText(filePath);
+
+		   //Avisa de la creacion del archivo
+		   Debug.Log("Created");
+	   }
+
+	   else
+	   {	
+		   //Lee el archivo
+		   readFile = File.ReadAllText(filePath);
+	   }
 	}
 
 	void Load()

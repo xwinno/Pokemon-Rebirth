@@ -16,14 +16,34 @@ public class ChangeLevel : MonoBehaviour {
 
 	void Awake()
 	{
-		
-		filePath = Application.dataPath + "/Datos/Jugador/Posicion.json";
-		readFile = File.ReadAllText(filePath);
+		//Crea el archivo
+		filePath = Application.persistentDataPath + "/Save/Posicion.json";
+		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+		CrearArchivo();;
 
+		//Busca el fade
 		fade = GameObject.FindGameObjectWithTag("Fade");
 		animacionFade = fade.GetComponent<Animator>();
 
 		instance = this;
+	}
+
+	void CrearArchivo()
+	{
+       if (!File.Exists(filePath))
+	   {	
+		   //Crea el archivo de guardado
+		   File.Copy(Application.streamingAssetsPath + "/Jugador/Posicion.json", filePath);
+
+		   //Avisa de que existe el archivo
+		   Debug.Log("Created");
+	   }
+
+	   else
+	   {
+		    //Lee el archivo
+		    readFile = File.ReadAllText(filePath);
+	   }
 	}
 
 	public void CargarPartida()
