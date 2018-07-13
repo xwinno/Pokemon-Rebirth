@@ -23,7 +23,7 @@ public class MenuInGame : MonoBehaviour {
 	void Awake()
 	{
 		//Variables de carga de datos
-		filePathEspañol = Application.streamingAssetsPath + "/Idiomas/Español.json";
+		filePathEspañol = Application.streamingAssetsPath + "/Idiomas/Spanish.json";
 		filePathEnglish = Application.streamingAssetsPath + "/Idiomas/English.json";
 		filePathElegido = Application.persistentDataPath + "/Save/IdiomaElegido.json";
 		readEspañol = File.ReadAllText(filePathEspañol);
