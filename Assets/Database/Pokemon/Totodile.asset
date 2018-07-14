@@ -13,4 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelo: {fileID: 100072, guid: 2c56279f597b21b4dbfd01f209f4265d, type: 3}
   icono: {fileID: 21300000, guid: 6fc22eda05ce2b44da650139687a55d1, type: 3}
+  crie: {fileID: 8300000, guid: 72e69571311fb9a40953e55c48aa6b29, type: 3}
   nombre: Totodile

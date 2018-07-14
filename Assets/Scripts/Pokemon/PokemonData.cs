@@ -8,6 +8,7 @@ public class PokemonData : ScriptableObject {
 
 	public GameObject modelo;
 	public Sprite icono;
+	public AudioClip crie;
 	public string nombre;
 
 }

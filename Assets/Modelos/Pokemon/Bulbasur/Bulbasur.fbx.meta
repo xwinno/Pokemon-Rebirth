@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: de090012bc3ff0542aa8aac29a6badde
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bulbasur
+    100004: Bulbasur_skeleton
+    100006: Feeler
+    100008: Head
+    100010: Hips
+    100012: Jaw
+    100014: Jaw_end
+    100016: LArm
+    100018: LEar
+    100020: LEar_end
+    100022: LFeelerC01
+    100024: LFeelerC02
+    100026: LFeelerC03
+    100028: LFeelerC04
+    100030: LFeelerC05
+    100032: LFeelerC06
+    100034: LFeelerC07
+    100036: LFeelerC08
+    100038: LFeelerC09
+    100040: LFeelerC10
+    100042: LFeelerC10_end
+    100044: LFinger
+    100046: LFinger_end
+    100048: LFoot
+    100050: LForeArm
+    100052: LHand
+    100054: LHips
+    100056: LLeg
+    100058: LShoulder
+    100060: LThigh
+    100062: LToe
+    100064: LToe_end
+    100066: Origin
+    100068: pm0001_00
+    100070: pm0001_00_BodySkin
+    100072: pm0001_00_BodySkin_end
+    100074: pm0001_00_IrisSkin
+    100076: pm0001_00_IrisSkin_end
+    100078: pm0001_00_LTutaSkin
+    100080: pm0001_00_LTutaSkin_end
+    100082: pm0001_00_RTutaSkin
+    100084: pm0001_00_RTutaSkin_end
+    100086: RArm
+    100088: REar
+    100090: REar_end
+    100092: RFeelerC01
+    100094: RFeelerC02
+    100096: RFeelerC03
+    100098: RFeelerC04
+    100100: RFeelerC05
+    100102: RFeelerC06
+    100104: RFeelerC07
+    100106: RFeelerC08
+    100108: RFeelerC09
+    100110: RFeelerC10
+    100112: RFeelerC10_end
+    100114: RFinger
+    100116: RFinger_end
+    100118: RFoot
+    100120: RForeArm
+    100122: RHand
+    100124: RHips
+    100126: RLeg
+    100128: RShoulder
+    100130: RThigh
+    100132: RToe
+    100134: RToe_end
+    100136: Spine1
+    100138: Spine2
+    100140: Waist
+    400000: Bulbasur
+    400002: //RootNode
+    400004: Bulbasur_skeleton
+    400006: Feeler
+    400008: Head
+    400010: Hips
+    400012: Jaw
+    400014: Jaw_end
+    400016: LArm
+    400018: LEar
+    400020: LEar_end
+    400022: LFeelerC01
+    400024: LFeelerC02
+    400026: LFeelerC03
+    400028: LFeelerC04
+    400030: LFeelerC05
+    400032: LFeelerC06
+    400034: LFeelerC07
+    400036: LFeelerC08
+    400038: LFeelerC09
+    400040: LFeelerC10
+    400042: LFeelerC10_end
+    400044: LFinger
+    400046: LFinger_end
+    400048: LFoot
+    400050: LForeArm
+    400052: LHand
+    400054: LHips
+    400056: LLeg
+    400058: LShoulder
+    400060: LThigh
+    400062: LToe
+    400064: LToe_end
+    400066: Origin
+    400068: pm0001_00
+    400070: pm0001_00_BodySkin
+    400072: pm0001_00_BodySkin_end
+    400074: pm0001_00_IrisSkin
+    400076: pm0001_00_IrisSkin_end
+    400078: pm0001_00_LTutaSkin
+    400080: pm0001_00_LTutaSkin_end
+    400082: pm0001_00_RTutaSkin
+    400084: pm0001_00_RTutaSkin_end
+    400086: RArm
+    400088: REar
+    400090: REar_end
+    400092: RFeelerC01
+    400094: RFeelerC02
+    400096: RFeelerC03
+    400098: RFeelerC04
+    400100: RFeelerC05
+    400102: RFeelerC06
+    400104: RFeelerC07
+    400106: RFeelerC08
+    400108: RFeelerC09
+    400110: RFeelerC10
+    400112: RFeelerC10_end
+    400114: RFinger
+    400116: RFinger_end
+    400118: RFoot
+    400120: RForeArm
+    400122: RHand
+    400124: RHips
+    400126: RLeg
+    400128: RShoulder
+    400130: RThigh
+    400132: RToe
+    400134: RToe_end
+    400136: Spine1
+    400138: Spine2
+    400140: Waist
+    2100000: pm0001_00_BodyB1.tga
+    2100002: pm0001_00_BodyA1.tga
+    2100004: pm0001_00_Eye1.tga
+    2100006: pm0001_00_Iris1.tga
+    4300000: Bulbasur
+    7400000: Bulbasur - Idle
+    7400002: Bulbasur - Run
+    7400004: Bulbasur - Walk
+    9500000: //RootNode
+    13700000: Bulbasur
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0001_00_BodyA1.tga
+    second: {fileID: 2100000, guid: c982221d58d2281449a2e62a67fab0ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0001_00_BodyB1.tga
+    second: {fileID: 2100000, guid: f3fa720848545ac469d47b8e98aec88f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0001_00_Eye1.tga
+    second: {fileID: 2100000, guid: 51e599294e02fce478e2a20238808abf, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Bulbasur - Idle
+      takeName: Bulbasur_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bulbasur - Run
+      takeName: Bulbasur_skeleton|Run
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bulbasur - Walk
+      takeName: Bulbasur_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

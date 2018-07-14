@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcc1fcecca250554fa926d4e0f912a0b, type: 3}
-  m_Name: Torchic
+  m_Name: Bulbasur
   m_EditorClassIdentifier: 
-  modelo: {fileID: 100148, guid: 9fa05892878cd6741a213e2e74a941e3, type: 3}
-  icono: {fileID: 21300000, guid: 185841d6e36b703498b9edc3b76bf531, type: 3}
-  crie: {fileID: 8300000, guid: 105f4912de888e24ebcc3f15e6751577, type: 3}
-  nombre: Torchic
+  modelo: {fileID: 100000, guid: de090012bc3ff0542aa8aac29a6badde, type: 3}
+  icono: {fileID: 21300000, guid: 3c9a73abf42f9d4408b7bfcaebd9556c, type: 3}
+  crie: {fileID: 8300000, guid: 4ea7d0c01b5fbc544b811640d4236afd, type: 3}
+  nombre: Bulbasur

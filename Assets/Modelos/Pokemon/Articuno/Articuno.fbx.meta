@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: c52a35c7dbc6b0745b3d1716ea97cb49
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Articuno
+    100004: Articuno_skeleton
+    100006: FeelerB1
+    100008: FeelerB2
+    100010: FeelerB3
+    100012: FeelerB3_end
+    100014: Head
+    100016: Hips
+    100018: Jaw
+    100020: Jaw_end
+    100022: LArm
+    100024: LFoot
+    100026: LForeArm1
+    100028: LForeArm2
+    100030: LHand1
+    100032: LHand2
+    100034: LHand2_end
+    100036: LLeg
+    100038: LShoulder
+    100040: LThigh
+    100042: LToeA1
+    100044: LToeA2
+    100046: LToeA3
+    100048: LToeA3_end
+    100050: LToeB1
+    100052: LToeB2
+    100054: LToeB3
+    100056: LToeB3_end
+    100058: LToeC1
+    100060: LToeC2
+    100062: LToeC3
+    100064: LToeC3_end
+    100066: LToeD1
+    100068: LToeD2
+    100070: LToeD2_end
+    100072: Neck
+    100074: Origin
+    100076: pm0144_00
+    100078: pm0144_00_Skin
+    100080: pm0144_00_Skin_end
+    100082: RArm
+    100084: RFoot
+    100086: RForeArm1
+    100088: RForeArm2
+    100090: RHand1
+    100092: RHand2
+    100094: RHand2_end
+    100096: RLeg
+    100098: RShoulder
+    100100: RThigh
+    100102: RToeA1
+    100104: RToeA2
+    100106: RToeA3
+    100108: RToeA3_end
+    100110: RToeB1
+    100112: RToeB2
+    100114: RToeB3
+    100116: RToeB3_end
+    100118: RToeC1
+    100120: RToeC2
+    100122: RToeC3
+    100124: RToeC3_end
+    100126: RToeD1
+    100128: RToeD2
+    100130: RToeD2_end
+    100132: Spine1
+    100134: Spine2
+    100136: Tail1
+    100138: Tail10
+    100140: Tail11
+    100142: Tail12
+    100144: Tail13
+    100146: Tail14
+    100148: Tail15
+    100150: Tail16
+    100152: Tail17
+    100154: Tail18
+    100156: Tail19
+    100158: Tail19_end
+    100160: Tail2
+    100162: Tail3
+    100164: Tail4
+    100166: Tail5
+    100168: Tail6
+    100170: Tail7
+    100172: Tail8
+    100174: Tail9
+    100176: Waist
+    400000: Articuno
+    400002: //RootNode
+    400004: Articuno_skeleton
+    400006: FeelerB1
+    400008: FeelerB2
+    400010: FeelerB3
+    400012: FeelerB3_end
+    400014: Head
+    400016: Hips
+    400018: Jaw
+    400020: Jaw_end
+    400022: LArm
+    400024: LFoot
+    400026: LForeArm1
+    400028: LForeArm2
+    400030: LHand1
+    400032: LHand2
+    400034: LHand2_end
+    400036: LLeg
+    400038: LShoulder
+    400040: LThigh
+    400042: LToeA1
+    400044: LToeA2
+    400046: LToeA3
+    400048: LToeA3_end
+    400050: LToeB1
+    400052: LToeB2
+    400054: LToeB3
+    400056: LToeB3_end
+    400058: LToeC1
+    400060: LToeC2
+    400062: LToeC3
+    400064: LToeC3_end
+    400066: LToeD1
+    400068: LToeD2
+    400070: LToeD2_end
+    400072: Neck
+    400074: Origin
+    400076: pm0144_00
+    400078: pm0144_00_Skin
+    400080: pm0144_00_Skin_end
+    400082: RArm
+    400084: RFoot
+    400086: RForeArm1
+    400088: RForeArm2
+    400090: RHand1
+    400092: RHand2
+    400094: RHand2_end
+    400096: RLeg
+    400098: RShoulder
+    400100: RThigh
+    400102: RToeA1
+    400104: RToeA2
+    400106: RToeA3
+    400108: RToeA3_end
+    400110: RToeB1
+    400112: RToeB2
+    400114: RToeB3
+    400116: RToeB3_end
+    400118: RToeC1
+    400120: RToeC2
+    400122: RToeC3
+    400124: RToeC3_end
+    400126: RToeD1
+    400128: RToeD2
+    400130: RToeD2_end
+    400132: Spine1
+    400134: Spine2
+    400136: Tail1
+    400138: Tail10
+    400140: Tail11
+    400142: Tail12
+    400144: Tail13
+    400146: Tail14
+    400148: Tail15
+    400150: Tail16
+    400152: Tail17
+    400154: Tail18
+    400156: Tail19
+    400158: Tail19_end
+    400160: Tail2
+    400162: Tail3
+    400164: Tail4
+    400166: Tail5
+    400168: Tail6
+    400170: Tail7
+    400172: Tail8
+    400174: Tail9
+    400176: Waist
+    2100000: pm0144_00_BodyA1.tga
+    2100002: pm0144_00_BodyB1.tga
+    2100004: pm0144_00_Eye1.tga
+    4300000: Articuno
+    7400000: Articuno - Idle
+    7400002: Articuno - Run
+    7400004: Articuno - Walk
+    9500000: //RootNode
+    13700000: Articuno
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0144_00_BodyA1.tga
+    second: {fileID: 2100000, guid: 2267639d02cdf9943a6e7aaeef8d74a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0144_00_BodyB1.tga
+    second: {fileID: 2100000, guid: 29ba7c834d9c2c440b1d0618e22dbace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0144_00_Eye1.tga
+    second: {fileID: 2100000, guid: 383a3c3478803e44797b0fdb6a6739c0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Articuno - Idle
+      takeName: Articuno_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Articuno - Run
+      takeName: Articuno_skeleton|Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Articuno - Walk
+      takeName: Articuno_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
