@@ -7,13 +7,12 @@ public class EquipoPokemon : MonoBehaviour {
 	//Accede al script desde otros scripts
 	public static EquipoPokemon instace;
 
-	//Genera una lista para almecenar los pokemons
-	public List<PokemonData> myTeam = new List<PokemonData>();
-
 	//Actualiza la UI
 	public delegate void actualizarUI();
 	public actualizarUI actualizarCallback;
 
+	//Genera una lista para almecenar los pokemons
+	public List<PokemonData> myTeam = new List<PokemonData>();
 
 	void Awake()
 	{

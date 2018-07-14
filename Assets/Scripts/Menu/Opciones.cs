@@ -54,6 +54,11 @@ public class Opciones : MonoBehaviour {
 	   }
 	}
 
+	public void Salir()
+	{
+		Application.Quit();
+	}
+
 	public void MenuOpciones()
 	{	
 		//Desactiva el menu anterior

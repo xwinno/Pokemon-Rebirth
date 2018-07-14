@@ -5,17 +5,11 @@ using UnityEngine;
 public class Interaccion : MonoBehaviour {
 
 	public Animator eKey;
-	public float radio = 4f;
 
 	public virtual void Interactuar()
 	{
 		Debug.Log("Interactuando con " + transform.name);
 		eKey.SetBool("eKey",false);
-	}
-
-	void Awake () 
-	{
-		this.gameObject.GetComponent<SphereCollider>().radius = radio;
 	}
 
 	void OnTriggerEnter(Collider other)
