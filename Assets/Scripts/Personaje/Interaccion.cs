@@ -21,14 +21,6 @@ public class Interaccion : MonoBehaviour {
 
 	}
 
-	void OnTriggerStay(Collider other)
-	{
-		if (Input.GetKeyDown(KeyCode.E) && other.tag == "Player")
-		{
-			Interactuar();
-		}
-	}
-
 	void OnTriggerExit(Collider other)
 	{
 		if(other.tag == "Player")

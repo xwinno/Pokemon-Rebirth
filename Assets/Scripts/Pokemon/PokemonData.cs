@@ -10,5 +10,6 @@ public class PokemonData : ScriptableObject {
 	public Sprite icono;
 	public AudioClip crie;
 	public string nombre;
+	public int numeroPokedex;
 
 }

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombre: Pocion
   icono: {fileID: 21300000, guid: 7de85c3cbcc88da45a2977c2e0ba9225, type: 3}
+  id: 1
   recoverHP: 20
   revivir: 0

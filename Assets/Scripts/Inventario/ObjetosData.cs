@@ -7,6 +7,7 @@ public class ObjetosData : ScriptableObject {
 
 	public string nombre;
 	public Sprite icono;
+	public int id;
 	public int recoverHP;
 	public bool revivir;
 

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class EquipoPokemonUI : MonoBehaviour {
 
+	public static EquipoPokemonUI instance;
 	public GameObject slotControl;
 	public Animator firstSlot;
 	public Animator secondSlot;
@@ -19,14 +20,13 @@ public class EquipoPokemonUI : MonoBehaviour {
 
 	void Awake()
 	{
+		instance = this;
 		equipo = EquipoPokemon.instace;
 	}
 
 	void Start()
 	{
 		slots = slotControl.GetComponentsInChildren<PokemonSlot>();
-
-		//Edit
 		equipo.actualizarCallback += UpdateUI;
 	}
 

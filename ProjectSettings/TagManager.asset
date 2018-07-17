@@ -8,6 +8,9 @@ TagManager:
   - Fade
   - Volume
   - eKey
+  - Pokemon
+  - Objeto
+  - Pokeball
   layers:
   - Default
   - TransparentFX

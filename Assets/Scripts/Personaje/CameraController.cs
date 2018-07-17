@@ -6,6 +6,8 @@ public class CameraController : MonoBehaviour {
 
 	public Animator animacion;
 	public Camera PlayerCam;
+	public GameObject pointer;
+	public GameObject pokeballEmitter;
 	public float sensibilidadH;
 	public float sensibilidadV;
 	public float velocidad;
@@ -18,15 +20,13 @@ public class CameraController : MonoBehaviour {
 	void Start()
 	{
 		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
 	}
 
 
 	// Update is called once per frame
 	void Update () 
 	{
-		//Movimiento con mecanism
-		//animacion.SetFloat("X", Input.GetAxis("Horizontal"));
-		//animacion.SetFloat("Z", Input.GetAxis("Vertical"));
 
 		//Recoje el movimiento del raton
 		h = sensibilidadH * Input.GetAxis("Mouse X");
@@ -76,7 +76,14 @@ public class CameraController : MonoBehaviour {
 		//Desbloquea el cursor
 		if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == false)
 		{
+			//Desbloquea el cursor
 			Cursor.lockState = CursorLockMode.None;
+
+			//Muestra el cursor
+			Cursor.visible = true;
+
+			//Esconde el puntero
+			pointer.SetActive(false);
 
 			cursorUnlocked = true;
 		}
@@ -84,7 +91,14 @@ public class CameraController : MonoBehaviour {
 		//Bloquea el cursor
 		else if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == true)
 		{
+			//Bloquea el cursor
 			Cursor.lockState = CursorLockMode.Locked;
+
+			//Esconde el cursor
+			Cursor.visible = false;
+
+			//Muestra el puntero
+			pointer.SetActive(true);
 
 			cursorUnlocked = false;
 		}

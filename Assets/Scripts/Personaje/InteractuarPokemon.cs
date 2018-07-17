@@ -19,6 +19,8 @@ public class InteractuarPokemon : Interaccion {
 		Capturar();
 	}
 
+
+
 	void Capturar()
 	{
 		bool FueCapturado = EquipoPokemon.instace.Añadir(pokemon);
