@@ -1,32 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Crosshair : MonoBehaviour {
 	
 	public GameObject pokeballEmitter;
 	public GameObject pokeball;
 	public Transform cameraMain;
+	public Image iconoCaptura;
 	public float fuerzaPokeball;
+	public bool modoCaptura;
 
 	void Update () 
 	{
-		if(Input.GetKeyDown(KeyCode.E))
-		{
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
+		//if(Input.GetKeyDown(KeyCode.E))
+		//{
+		//	Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		//	RaycastHit hit;
 
-			if(Physics.Raycast(ray, out hit, 1,97))
-			{
-				if(hit.transform.gameObject.tag == "Pokemon")
-				{
-					Debug.DrawLine(ray.origin, hit.point, Color.green);
-					hit.transform.gameObject.GetComponent<InteractuarPokemon>().Interactuar();
-				}
-			}
+		//	if(Physics.Raycast(ray, out hit, 1,97))
+		//	{
+		//		if(hit.transform.gameObject.tag == "Pokemon")
+		//		{
+		//			Debug.DrawLine(ray.origin, hit.point, Color.green);
+		//			hit.transform.gameObject.GetComponent<InteractuarPokemon>().Interactuar();
+		//		}
+		//	}
+	//  }
+
+		if(Input.GetKeyDown(KeyCode.Q))
+		{
+			modoCaptura = !modoCaptura;
+			iconoCaptura.enabled = !iconoCaptura.enabled;
 		}
 
-		if(Input.GetMouseButtonDown(0))
+
+		if(Input.GetMouseButtonDown(0) && modoCaptura == true)
 		{
 			//Crea la pokeball
 			GameObject TemporalHandler; 

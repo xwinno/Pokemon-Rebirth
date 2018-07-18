@@ -32,28 +32,15 @@ public class EquipoPokemonUI : MonoBehaviour {
 
 	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.Tab) && menuOpen == false)
+		if(Input.GetKeyDown(KeyCode.Tab))
 		{
-			firstSlot.SetBool("Slide",true);
-			secondSlot.SetBool("Slide",true);
-			thirdSlot.SetBool("Slide",true);
-			fourthSlot.SetBool("Slide",true);
-			fiveSlot.SetBool("Slide",true);
-			sixSlot.SetBool("Slide",true);
-
-			menuOpen = true;
-		}
-
-		else if(Input.GetKeyDown(KeyCode.Tab) && menuOpen == true)
-		{
-			firstSlot.SetBool("Slide",false);
-			secondSlot.SetBool("Slide",false);
-			thirdSlot.SetBool("Slide",false);
-			fourthSlot.SetBool("Slide",false);
-			fiveSlot.SetBool("Slide",false);
-			sixSlot.SetBool("Slide",false);
-
-			menuOpen = false;
+			menuOpen = !menuOpen;
+			firstSlot.SetBool("Slide",menuOpen);
+			secondSlot.SetBool("Slide",menuOpen);
+			thirdSlot.SetBool("Slide",menuOpen);
+			fourthSlot.SetBool("Slide",menuOpen);
+			fiveSlot.SetBool("Slide",menuOpen);
+			sixSlot.SetBool("Slide",menuOpen);
 		}
 	}
 

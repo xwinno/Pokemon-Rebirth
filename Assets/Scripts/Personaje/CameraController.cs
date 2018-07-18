@@ -58,24 +58,19 @@ public class CameraController : MonoBehaviour {
 		}
 
 		//Agacharse
-		if(Input.GetKeyDown(KeyCode.C) && crouch == false)
+		if(Input.GetKeyDown(KeyCode.C))
 		{
-			this.gameObject.GetComponent<Animator>().SetBool("Crouch", true);
-
-			crouch = true;
+			crouch = !crouch;
+			this.gameObject.GetComponent<Animator>().SetBool("Crouch", crouch);
 		}
-
-		else if(Input.GetKeyDown(KeyCode.C) && crouch == true)
-		{
-			this.gameObject.GetComponent<Animator>().SetBool("Crouch", false);
-
-			crouch = false;
-		}
-
 
 		//Desbloquea el cursor
 		if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == false)
 		{
+			//Sale del modo captura
+			this.gameObject.GetComponent<Crosshair>().modoCaptura = false;
+			this.gameObject.GetComponent<Crosshair>().iconoCaptura.enabled = false;
+
 			//Desbloquea el cursor
 			Cursor.lockState = CursorLockMode.None;
 
