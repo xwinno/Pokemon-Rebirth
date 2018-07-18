@@ -14,7 +14,10 @@ public class MenuInGame : MonoBehaviour {
 	string readElegido;
 	bool español;
 	bool english;
+	bool cursorUnlocked;
 
+	public GameObject player;
+	public GameObject pointer;
 	public GameObject inGame;
 	public Text guardarPartida;
 	public Text opciones;
@@ -102,6 +105,53 @@ public class MenuInGame : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
 			inGame.SetActive(!inGame.activeSelf);
+		}
+
+		//Desbloquea el cursor
+		if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == false)
+		{
+			//Sale del modo captura
+			player.GetComponent<Crosshair>().modoCaptura = false;
+			player.GetComponent<Crosshair>().iconoCaptura.enabled = false;
+			player.GetComponent<Crosshair>().consola.gameObject.SetActive(false);
+			player.GetComponent<Crosshair>().enabled = false;
+			player.GetComponent<CameraController>().enabled = false;
+
+			//Desbloquea el cursor
+			Cursor.lockState = CursorLockMode.None;
+
+			//Muestra el cursor
+			Cursor.visible = true;
+
+			//Esconde el puntero
+			pointer.SetActive(false);
+
+			cursorUnlocked = true;
+
+			//Para el juego
+			Time.timeScale = 0f;
+		}
+
+		//Bloquea el cursor
+		else if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == true)
+		{
+			//Resume el juego
+			Time.timeScale = 1f;
+
+			//Activa del modo captura
+			player.GetComponent<Crosshair>().enabled = true;
+			player.GetComponent<CameraController>().enabled = true;
+
+			//Bloquea el cursor
+			Cursor.lockState = CursorLockMode.Locked;
+
+			//Esconde el cursor
+			Cursor.visible = false;
+
+			//Muestra el puntero
+			pointer.SetActive(true);
+
+			cursorUnlocked = false;
 		}
 	}
 }

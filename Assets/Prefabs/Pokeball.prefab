@@ -173,10 +173,10 @@ GameObject:
   - component: {fileID: 135910443614286322}
   - component: {fileID: 54913076170830726}
   - component: {fileID: 95839735182310724}
-  - component: {fileID: 114346055114088528}
+  - component: {fileID: 114509401772689808}
   m_Layer: 0
   m_Name: Pokeball
-  m_TagString: Pokeball
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -493,7 +493,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!95 &95839735182310724
 Animator:
   serializedVersion: 3
@@ -512,7 +512,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114346055114088528
+--- !u!114 &114509401772689808
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

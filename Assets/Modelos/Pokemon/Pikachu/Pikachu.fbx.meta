@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 5261d5424522c8b4b809e92352a70556
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: EndFeeler
+    100002: EndFeeler_end
+    100004: EndHead
+    100006: EndHead_end
+    100008: EndHips
+    100010: EndHips_end
+    100012: EndLEar3
+    100014: EndLEar3_end
+    100016: EndLFoot
+    100018: EndLFoot_end
+    100020: EndLHand
+    100022: EndLHand_end
+    100024: EndLToe
+    100026: EndLToe_end
+    100028: EndREar3
+    100030: EndREar3_end
+    100032: EndRFoot
+    100034: EndRFoot_end
+    100036: EndRHand
+    100038: EndRHand_end
+    100040: EndRToe
+    100042: EndRToe_end
+    100044: EndTail3
+    100046: EndTail3_end
+    100048: Feeler
+    100050: Head
+    100052: Hips
+    100054: LArm
+    100056: LEar1
+    100058: LEar2
+    100060: LEar3
+    100062: LFoot
+    100064: LForeArm
+    100066: LHand
+    100068: LLeg
+    100070: LShoulder
+    100072: LThigh
+    100074: LToe
+    100076: Origin
+    100078: //RootNode
+    100080: PikachuM
+    100082: PikachuM 1
+    100084: PikachuM_end
+    100086: PikachuM_skeleton
+    100088: pm0025_00_BodySkin
+    100090: pm0025_00_BodySkin_end
+    100092: pm0025_00_pikachu
+    100094: pm0025_00_SippoSkin
+    100096: pm0025_00_SippoSkin_end
+    100098: RArm
+    100100: REar1
+    100102: REar2
+    100104: REar3
+    100106: RFoot
+    100108: RForeArm
+    100110: RHand
+    100112: RLeg
+    100114: RShoulder
+    100116: RThigh
+    100118: RToe
+    100120: Spine1
+    100122: Spine2
+    100124: Tail1
+    100126: Tail2
+    100128: Tail3
+    100130: VriVis00
+    100132: Waist
+    400000: EndFeeler
+    400002: EndFeeler_end
+    400004: EndHead
+    400006: EndHead_end
+    400008: EndHips
+    400010: EndHips_end
+    400012: EndLEar3
+    400014: EndLEar3_end
+    400016: EndLFoot
+    400018: EndLFoot_end
+    400020: EndLHand
+    400022: EndLHand_end
+    400024: EndLToe
+    400026: EndLToe_end
+    400028: EndREar3
+    400030: EndREar3_end
+    400032: EndRFoot
+    400034: EndRFoot_end
+    400036: EndRHand
+    400038: EndRHand_end
+    400040: EndRToe
+    400042: EndRToe_end
+    400044: EndTail3
+    400046: EndTail3_end
+    400048: Feeler
+    400050: Head
+    400052: Hips
+    400054: LArm
+    400056: LEar1
+    400058: LEar2
+    400060: LEar3
+    400062: LFoot
+    400064: LForeArm
+    400066: LHand
+    400068: LLeg
+    400070: LShoulder
+    400072: LThigh
+    400074: LToe
+    400076: Origin
+    400078: //RootNode
+    400080: PikachuM
+    400082: PikachuM 1
+    400084: PikachuM_end
+    400086: PikachuM_skeleton
+    400088: pm0025_00_BodySkin
+    400090: pm0025_00_BodySkin_end
+    400092: pm0025_00_pikachu
+    400094: pm0025_00_SippoSkin
+    400096: pm0025_00_SippoSkin_end
+    400098: RArm
+    400100: REar1
+    400102: REar2
+    400104: REar3
+    400106: RFoot
+    400108: RForeArm
+    400110: RHand
+    400112: RLeg
+    400114: RShoulder
+    400116: RThigh
+    400118: RToe
+    400120: Spine1
+    400122: Spine2
+    400124: Tail1
+    400126: Tail2
+    400128: Tail3
+    400130: VriVis00
+    400132: Waist
+    2100000: pm0025_00_BodyA1.png
+    2100002: pm0025_00_BodyB1.png
+    2100004: pm0025_00_Mouth1.png
+    2100006: pm0025_00_Eye1.png
+    4300000: PikachuM
+    7400000: Pikachu - Idle
+    7400002: Pikachu - Walk
+    7400004: Pikachu - Run
+    9500000: //RootNode
+    13700000: PikachuM
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0025_00_BodyA1.png
+    second: {fileID: 2100000, guid: e39d586636a6ec847a549f0896f449c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0025_00_BodyB1.png
+    second: {fileID: 2100000, guid: 77cee1fa325143949b5d6428780ced4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0025_00_Eye1.png
+    second: {fileID: 2100000, guid: d92648d8dc9c82445b160c8416dfd738, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0025_00_Mouth1.png
+    second: {fileID: 2100000, guid: 8991ad2ebe7abc04cb96c63c74bbe20b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Pikachu - Idle
+      takeName: PikachuM_skeleton|Pikachu_Idle
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Pikachu - Run
+      takeName: PikachuM_skeleton|Pikachu_Run
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Pikachu - Walk
+      takeName: PikachuM_skeleton|Pikachu_Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

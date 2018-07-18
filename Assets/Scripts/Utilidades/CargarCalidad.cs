@@ -10,7 +10,7 @@ public class CargarCalidad : MonoBehaviour {
 
 	void Awake()
 	{
-		filePath = Application.dataPath + "/Datos/Jugador/ConfiguracionGrafica.json";
+		filePath = Application.persistentDataPath + "/Save/ConfiguracionGrafica.json";
 		readFile = File.ReadAllText(filePath);
 		ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
 

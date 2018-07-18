@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PokeballBehaviour : MonoBehaviour {
+public class PokeballCaptureBehaviour : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{

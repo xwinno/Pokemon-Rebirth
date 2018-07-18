@@ -7,12 +7,28 @@ public class Crosshair : MonoBehaviour {
 	
 	public GameObject pokeballEmitter;
 	public GameObject pokeball;
+	public GameObject pokeballSpawn;
 	public Transform cameraMain;
+	public Text consola;
 	public Image iconoCaptura;
+	public int pokeballHad;
 	public float fuerzaPokeball;
 	public bool modoCaptura;
+	bool spawneado;
 
-	void Update () 
+
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Q))
+		{
+			modoCaptura = !modoCaptura;
+			iconoCaptura.enabled = !iconoCaptura.enabled;
+
+			consola.text = pokeballHad.ToString();
+			consola.gameObject.SetActive(modoCaptura);
+		}
+	}
+	void LateUpdate () 
 	{
 		//if(Input.GetKeyDown(KeyCode.E))
 		//{
@@ -29,28 +45,48 @@ public class Crosshair : MonoBehaviour {
 		//	}
 	//  }
 
-		if(Input.GetKeyDown(KeyCode.Q))
-		{
-			modoCaptura = !modoCaptura;
-			iconoCaptura.enabled = !iconoCaptura.enabled;
-		}
-
-
 		if(Input.GetMouseButtonDown(0) && modoCaptura == true)
 		{
-			//Crea la pokeball
-			GameObject TemporalHandler; 
-			TemporalHandler = Instantiate(pokeball, pokeballEmitter.transform.position, pokeballEmitter.transform.rotation) as GameObject;
+			if(pokeballHad >= 1)
+			{
+				//Crea la pokeball
+				GameObject TemporalHandler; 
+				TemporalHandler = Instantiate(pokeball, pokeballEmitter.transform.position, pokeballEmitter.transform.rotation) as GameObject;
 
-			//Accede a el rigidbody
-			Rigidbody TemporalRigidbody;
-			TemporalRigidbody = TemporalHandler.GetComponent<Rigidbody>();
+				//Accede a el rigidbody
+				Rigidbody TemporalRigidbody;
+				TemporalRigidbody = TemporalHandler.GetComponent<Rigidbody>();
 
-			//Lanza la pokeball
-			TemporalRigidbody.velocity = cameraMain.forward * fuerzaPokeball;
+				//Lanza la pokeball
+				TemporalRigidbody.velocity = cameraMain.forward * fuerzaPokeball;
+				pokeballHad --;
+				consola.text = pokeballHad.ToString();
 
-			//Destruir pokeball
-			Destroy(TemporalHandler, 3);
+				//Destruir pokeball
+				Destroy(TemporalHandler, 3);
+			}
+		}
+
+		if(Input.GetMouseButtonDown(1))
+		{
+			spawneado = !spawneado;
+
+			if (spawneado == false)
+			{
+				//Crea la pokeball
+				GameObject TemporalHandler; 
+				TemporalHandler = Instantiate(pokeballSpawn, pokeballEmitter.transform.position, pokeballEmitter.transform.rotation) as GameObject;
+
+				//Accede a el rigidbody
+				Rigidbody TemporalRigidbody;
+				TemporalRigidbody = TemporalHandler.GetComponent<Rigidbody>();
+
+				//Lanza la pokeball
+				TemporalRigidbody.velocity = cameraMain.forward * fuerzaPokeball;
+
+				//Destruir pokeball
+				Destroy(TemporalHandler, 3);
+			}
 		}
 	}
 }
