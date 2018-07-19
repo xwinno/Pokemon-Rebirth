@@ -15,19 +15,17 @@ public class EquipoPokemonUI : MonoBehaviour {
 	public Animator sixSlot;
 	PokemonData pokemon;
 	PokemonSlot[] slots;
-	EquipoPokemon equipo;
 	bool menuOpen;
 
 	void Awake()
 	{
 		instance = this;
-		equipo = EquipoPokemon.instace;
 	}
 
 	void Start()
 	{
 		slots = slotControl.GetComponentsInChildren<PokemonSlot>();
-		equipo.actualizarCallback += UpdateUI;
+		EquipoPokemon.instace.actualizarCallback += UpdateUI;
 	}
 
 	void Update()
@@ -48,9 +46,9 @@ public class EquipoPokemonUI : MonoBehaviour {
 	{
 		for (int i = 0; i < slots.Length; i++)
 		{
-			if(i < equipo.myTeam.Count)
+			if(i < EquipoPokemon.instace.myTeam.Count)
 			{
-				slots[i].AñadirPokemon(equipo.myTeam[i]);
+				slots[i].AñadirPokemon(EquipoPokemon.instace.myTeam[i]);
 			}
 		}
 	}

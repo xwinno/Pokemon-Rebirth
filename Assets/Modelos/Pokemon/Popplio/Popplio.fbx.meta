@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: 55d98a8d686ce0c4292c19c00e7dd7d0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Camera
+    100002: FeelerA1
+    100004: FeelerA2
+    100006: FeelerA2_end
+    100008: FeelerB1
+    100010: FeelerB2
+    100012: FeelerB2_end
+    100014: FeelerC1
+    100016: FeelerC2
+    100018: FeelerC2_end
+    100020: FeelerD1
+    100022: FeelerD2
+    100024: FeelerD2_end
+    100026: FeelerE1
+    100028: FeelerE2
+    100030: FeelerE2_end
+    100032: FeelerF1
+    100034: FeelerF2
+    100036: FeelerF2_end
+    100038: FeelerG1
+    100040: FeelerG2
+    100042: FeelerG2_end
+    100044: FeelerH1
+    100046: FeelerH2
+    100048: FeelerH2_end
+    100050: Head
+    100052: Hips
+    100054: LArm
+    100056: LEar1
+    100058: LEar2
+    100060: LEar2_end
+    100062: LForeArm
+    100064: LHand
+    100066: LHand_end
+    100068: LShoulder
+    100070: LToe1
+    100072: LToe2
+    100074: LToe2_end
+    100076: Neck
+    100078: Nose
+    100080: Nose_end
+    100082: Origin
+    100084: pm0847_00
+    100086: pm0847_00_BodyASkin
+    100088: pm0847_00_BodyASkin_end
+    100090: pm0847_00_BodyBSkin
+    100092: pm0847_00_BodyBSkin_end
+    100094: Popplio
+    100096: //RootNode
+    100098: Popplio_skeleton
+    100100: RArm
+    100102: REar1
+    100104: REar2
+    100106: REar2_end
+    100108: RForeArm
+    100110: RHand
+    100112: RHand_end
+    100114: RootFeeler
+    100116: RShoulder
+    100118: RToe1
+    100120: RToe2
+    100122: RToe2_end
+    100124: Spine1
+    100126: Spine2
+    100128: Tail1
+    100130: Tail2
+    100132: Waist
+    400000: Camera
+    400002: FeelerA1
+    400004: FeelerA2
+    400006: FeelerA2_end
+    400008: FeelerB1
+    400010: FeelerB2
+    400012: FeelerB2_end
+    400014: FeelerC1
+    400016: FeelerC2
+    400018: FeelerC2_end
+    400020: FeelerD1
+    400022: FeelerD2
+    400024: FeelerD2_end
+    400026: FeelerE1
+    400028: FeelerE2
+    400030: FeelerE2_end
+    400032: FeelerF1
+    400034: FeelerF2
+    400036: FeelerF2_end
+    400038: FeelerG1
+    400040: FeelerG2
+    400042: FeelerG2_end
+    400044: FeelerH1
+    400046: FeelerH2
+    400048: FeelerH2_end
+    400050: Head
+    400052: Hips
+    400054: LArm
+    400056: LEar1
+    400058: LEar2
+    400060: LEar2_end
+    400062: LForeArm
+    400064: LHand
+    400066: LHand_end
+    400068: LShoulder
+    400070: LToe1
+    400072: LToe2
+    400074: LToe2_end
+    400076: Neck
+    400078: Nose
+    400080: Nose_end
+    400082: Origin
+    400084: pm0847_00
+    400086: pm0847_00_BodyASkin
+    400088: pm0847_00_BodyASkin_end
+    400090: pm0847_00_BodyBSkin
+    400092: pm0847_00_BodyBSkin_end
+    400094: Popplio
+    400096: //RootNode
+    400098: Popplio_skeleton
+    400100: RArm
+    400102: REar1
+    400104: REar2
+    400106: REar2_end
+    400108: RForeArm
+    400110: RHand
+    400112: RHand_end
+    400114: RootFeeler
+    400116: RShoulder
+    400118: RToe1
+    400120: RToe2
+    400122: RToe2_end
+    400124: Spine1
+    400126: Spine2
+    400128: Tail1
+    400130: Tail2
+    400132: Waist
+    2000000: Camera
+    2100000: pm0847_00_Body1.tga
+    2100002: pm0847_00_Eye1.tga
+    2100004: pm0847_00_Mouth1.tga
+    4300000: Popplio
+    7400000: Popplio - Idle
+    7400002: Popplio - Run
+    7400004: Popplio - Walk
+    9500000: //RootNode
+    13700000: Popplio
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0847_00_Body1.tga
+    second: {fileID: 2100000, guid: 9fff95c5b82ded545aa6868ed9913087, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0847_00_Eye1.tga
+    second: {fileID: 2100000, guid: b88a6d27a65a32e47b6c4a0f4469efa5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0847_00_Mouth1.tga
+    second: {fileID: 2100000, guid: ce8e97c204d73954fab0eb05e9c5ad45, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Popplio - Idle
+      takeName: Popplio_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Popplio - Run
+      takeName: Popplio_skeleton|Run
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Popplio - Walk
+      takeName: Popplio_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

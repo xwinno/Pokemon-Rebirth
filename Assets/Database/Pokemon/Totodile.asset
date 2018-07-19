@@ -14,5 +14,7 @@ MonoBehaviour:
   modelo: {fileID: 1821209468954516, guid: 0e50f5418e279eb418f5c2ae54457ba3, type: 2}
   icono: {fileID: 21300000, guid: 6fc22eda05ce2b44da650139687a55d1, type: 3}
   crie: {fileID: 8300000, guid: 72e69571311fb9a40953e55c48aa6b29, type: 3}
+  FollowAI: {fileID: 9100000, guid: f597f481bbe3a0740aa1e580225cd52d, type: 2}
+  PokemonController: {fileID: 9100000, guid: 8e861b37ef95cdb4ab589cb4a0d94858, type: 2}
   nombre: Totodile
   numeroPokedex: 158

@@ -1,0 +1,313 @@
+fileFormatVersion: 2
+guid: 2423c8bed034bd8459f50718700f0737
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: LArm
+    100006: LEar1
+    100008: LEar2
+    100010: LEar2_end
+    100012: LFinger
+    100014: LFinger_end
+    100016: LFoot
+    100018: LForeArm
+    100020: LHand
+    100022: LLeg
+    100024: LShoulder
+    100026: LThigh
+    100028: LToe
+    100030: LToe_end
+    100032: Nose
+    100034: Nose_end
+    100036: Origin
+    100038: pm0498_00
+    100040: pm0498_00_BodyASkin
+    100042: pm0498_00_BodyASkin_end
+    100044: pm0498_00_BodyIncSkin
+    100046: pm0498_00_BodyIncSkin_end
+    100048: pm0498_00_IrisSkin
+    100050: pm0498_00_IrisSkin_end
+    100052: pm0498_00_TailIncSkin
+    100054: pm0498_00_TailIncSkin_end
+    100056: RArm
+    100058: REar1
+    100060: REar2
+    100062: REar2_end
+    100064: RFinger
+    100066: RFinger_end
+    100068: RFoot
+    100070: RForeArm
+    100072: RHand
+    100074: RLeg
+    100076: RShoulder
+    100078: RThigh
+    100080: RToe
+    100082: RToe_end
+    100084: Spine1
+    100086: Spine2
+    100088: Tail01
+    100090: Tail02
+    100092: Tail3
+    100094: Tail3_end
+    100096: Tepig
+    100098: //RootNode
+    100100: Tepig_skeleton
+    100102: Waist
+    400000: Head
+    400002: Hips
+    400004: LArm
+    400006: LEar1
+    400008: LEar2
+    400010: LEar2_end
+    400012: LFinger
+    400014: LFinger_end
+    400016: LFoot
+    400018: LForeArm
+    400020: LHand
+    400022: LLeg
+    400024: LShoulder
+    400026: LThigh
+    400028: LToe
+    400030: LToe_end
+    400032: Nose
+    400034: Nose_end
+    400036: Origin
+    400038: pm0498_00
+    400040: pm0498_00_BodyASkin
+    400042: pm0498_00_BodyASkin_end
+    400044: pm0498_00_BodyIncSkin
+    400046: pm0498_00_BodyIncSkin_end
+    400048: pm0498_00_IrisSkin
+    400050: pm0498_00_IrisSkin_end
+    400052: pm0498_00_TailIncSkin
+    400054: pm0498_00_TailIncSkin_end
+    400056: RArm
+    400058: REar1
+    400060: REar2
+    400062: REar2_end
+    400064: RFinger
+    400066: RFinger_end
+    400068: RFoot
+    400070: RForeArm
+    400072: RHand
+    400074: RLeg
+    400076: RShoulder
+    400078: RThigh
+    400080: RToe
+    400082: RToe_end
+    400084: Spine1
+    400086: Spine2
+    400088: Tail01
+    400090: Tail02
+    400092: Tail3
+    400094: Tail3_end
+    400096: Tepig
+    400098: //RootNode
+    400100: Tepig_skeleton
+    400102: Waist
+    2100000: pm0498_00_Pokabu_Tail00Env.tga
+    2100002: pm0498_00_Body1.tga
+    2100004: pm0498_00_Eye1.tga
+    2100006: pm0498_00_Mouth1.tga
+    2100008: pm0498_00_Iris1.tga
+    2100010: pm0498_00_Pokabu_Tail01Inc.tga
+    4300000: Tepig
+    7400000: Tepig - Idle
+    7400002: Tepig - Run
+    7400004: Tepig - Walk
+    9500000: //RootNode
+    13700000: Tepig
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0498_00_Body1.tga
+    second: {fileID: 2100000, guid: ee89bf699cc9b4041b86ce520617c1d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0498_00_Eye1.tga
+    second: {fileID: 2100000, guid: 1a7bc2595468a254997aa6817d261406, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0498_00_Mouth1.tga
+    second: {fileID: 2100000, guid: c36c34bd3cf3aea43b50392ebd28af49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0498_00_Pokabu_Tail00Env.tga
+    second: {fileID: 2100000, guid: 851259bedffe4d340ba4b6a1b2da6a6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pm0498_00_Pokabu_Tail01Inc.tga
+    second: {fileID: 2100000, guid: 077670b3b99f2174ea3d42e4481875b1, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Tepig - Idle
+      takeName: Tepig_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tepig - Run
+      takeName: Tepig_skeleton|Run
+      firstFrame: 0
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tepig - Walk
+      takeName: Tepig_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

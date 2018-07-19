@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class ActualizarUI : MonoBehaviour {
 
-	EquipoPokemon equipo;
-
-	void Awake()
-	{
-		equipo = EquipoPokemon.instace;
-	}
-
 	// Use this for initialization
 	void Start () 
 	{
-		equipo.actualizarCallback();
+		EquipoPokemon.instace.actualizarCallback();
 	}
 }

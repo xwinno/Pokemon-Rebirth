@@ -67,7 +67,7 @@ public class Crosshair : MonoBehaviour {
 			}
 		}
 
-		if(Input.GetMouseButtonDown(1))
+		if(Input.GetMouseButtonDown(1) && modoCaptura == false)
 		{
 			spawneado = !spawneado;
 

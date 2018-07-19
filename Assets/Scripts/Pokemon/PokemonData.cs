@@ -9,6 +9,8 @@ public class PokemonData : ScriptableObject {
 	public GameObject modelo;
 	public Sprite icono;
 	public AudioClip crie;
+	public RuntimeAnimatorController FollowAI;
+	public RuntimeAnimatorController PokemonController;
 	public string nombre;
 	public int numeroPokedex;
 

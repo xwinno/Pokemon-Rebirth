@@ -14,5 +14,7 @@ MonoBehaviour:
   modelo: {fileID: 1206803167906818, guid: c5fbfc71c5d228447a1f4135d8d60cac, type: 2}
   icono: {fileID: 21300000, guid: 3c9a73abf42f9d4408b7bfcaebd9556c, type: 3}
   crie: {fileID: 8300000, guid: 4ea7d0c01b5fbc544b811640d4236afd, type: 3}
+  FollowAI: {fileID: 9100000, guid: 1834c492f3630ce45b796a76ce4e3aaf, type: 2}
+  PokemonController: {fileID: 9100000, guid: 16f275db3f7d79b4eab2bcb30fc1127b, type: 2}
   nombre: Bulbasur
   numeroPokedex: 1

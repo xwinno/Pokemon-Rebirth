@@ -14,5 +14,7 @@ MonoBehaviour:
   modelo: {fileID: 1790364134548782, guid: 1bf9975704ada224bb576172a45d5a7b, type: 2}
   icono: {fileID: 21300000, guid: 6a5ac3b8d979f4b4f94bb1f511bd461f, type: 3}
   crie: {fileID: 8300000, guid: c11b25115c80de4459b461b5971401aa, type: 3}
+  FollowAI: {fileID: 9100000, guid: e50cde1c7fbbea44c9971794f7c7f5a0, type: 2}
+  PokemonController: {fileID: 9100000, guid: 417a7b97bbbb20d489e6f3e8a7401663, type: 2}
   nombre: Turtwig
   numeroPokedex: 387

@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
 	public Animator animacion;
-	public Camera PlayerCam;
+	public Camera playerCam;
 	public GameObject pointer;
 	public GameObject pokeballEmitter;
 	public float sensibilidadH;
@@ -27,7 +27,6 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-
 		//Recoje el movimiento del raton
 		h = sensibilidadH * Input.GetAxis("Mouse X");
 		v = sensibilidadV * Input.GetAxis("Mouse Y");
@@ -36,7 +35,7 @@ public class CameraController : MonoBehaviour {
 		transform.Rotate(0,h,0);
 
 		//Movimiento vertical
-		PlayerCam.transform.Rotate(-v,0,0);
+		playerCam.transform.Rotate(-v,0,0);
 
 		//Movimiento jugador
 		float movimiento = Input.GetAxis("Vertical") * velocidad;

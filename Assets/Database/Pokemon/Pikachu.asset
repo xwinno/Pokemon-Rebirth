@@ -14,5 +14,7 @@ MonoBehaviour:
   modelo: {fileID: 1644563715670476, guid: e9ad87fc98140bd418aeb61c4de6c785, type: 2}
   icono: {fileID: 21300000, guid: 0184a1e08c3e5cd4f82426dbae706b56, type: 3}
   crie: {fileID: 8300000, guid: 5687056f00e36864c919abf05b6f3a52, type: 3}
+  FollowAI: {fileID: 9100000, guid: 8bd7c1a3eacd3db4d824636acccf828e, type: 2}
+  PokemonController: {fileID: 9100000, guid: dcafd275c37255a4c8fead549d6e2e77, type: 2}
   nombre: Pikachu
   numeroPokedex: 25
