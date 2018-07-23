@@ -19,6 +19,50 @@ public class EquipoPokemon : MonoBehaviour {
 		instace = this;
 	}
 
+	void Update()
+	{
+		//Cambia el pokemon del primer slot
+		if(Input.GetKeyDown(KeyCode.Alpha2))
+		{
+			PokemonData storePokemon = myTeam[0];
+			myTeam[0] = myTeam[1];
+			myTeam[1] = storePokemon;
+			actualizarCallback.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha3))
+		{
+			PokemonData storePokemon = myTeam[0];
+			myTeam[0] = myTeam[2];
+			myTeam[2] = storePokemon;
+			actualizarCallback.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha4))
+		{
+			PokemonData storePokemon = myTeam[0];
+			myTeam[0] = myTeam[3];
+			myTeam[3] = storePokemon;
+			actualizarCallback.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha5))
+		{
+			PokemonData storePokemon = myTeam[0];
+			myTeam[0] = myTeam[4];
+			myTeam[4] = storePokemon;
+			actualizarCallback.Invoke();
+		}
+
+		if(Input.GetKeyDown(KeyCode.Alpha6))
+		{
+			PokemonData storePokemon = myTeam[0];
+			myTeam[0] = myTeam[5];
+			myTeam[5] = storePokemon;
+			actualizarCallback.Invoke();
+		}
+	}
+
 	//Añade el pokemon a tu equipo
 	public bool Añadir (PokemonData pokemon)
 	{

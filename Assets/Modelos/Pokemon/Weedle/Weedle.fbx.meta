@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 1e57fb426ea1b234ea8a4a942ee8d748
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Head
+    100002: Hips
+    100004: LFootA
+    100006: LFootA_end
+    100008: LFootB
+    100010: LFootB_end
+    100012: LFootC
+    100014: LFootC_end
+    100016: LFootD
+    100018: LFootD_end
+    100020: LFootE
+    100022: LFootE_end
+    100024: LFootF
+    100026: LFootF_end
+    100028: LFootG
+    100030: LFootG_end
+    100032: Nose
+    100034: Nose_end
+    100036: Origin
+    100038: pm0013_00
+    100040: pm0013_00_Skin
+    100042: pm0013_00_Skin_end
+    100044: RFootA
+    100046: RFootA_end
+    100048: RFootB
+    100050: RFootB_end
+    100052: RFootC
+    100054: RFootC_end
+    100056: RFootD
+    100058: RFootD_end
+    100060: RFootE
+    100062: RFootE_end
+    100064: RFootF
+    100066: RFootF_end
+    100068: RFootG
+    100070: RFootG_end
+    100072: Spine1
+    100074: Spine2
+    100076: Spine3
+    100078: Spine4
+    100080: Tail1
+    100082: Tail2
+    100084: Tail3
+    100086: Tail4
+    100088: Tail4_end
+    100090: Waist
+    100092: //RootNode
+    100094: Weedle
+    100096: Weedle_skeleton
+    400000: Head
+    400002: Hips
+    400004: LFootA
+    400006: LFootA_end
+    400008: LFootB
+    400010: LFootB_end
+    400012: LFootC
+    400014: LFootC_end
+    400016: LFootD
+    400018: LFootD_end
+    400020: LFootE
+    400022: LFootE_end
+    400024: LFootF
+    400026: LFootF_end
+    400028: LFootG
+    400030: LFootG_end
+    400032: Nose
+    400034: Nose_end
+    400036: Origin
+    400038: pm0013_00
+    400040: pm0013_00_Skin
+    400042: pm0013_00_Skin_end
+    400044: RFootA
+    400046: RFootA_end
+    400048: RFootB
+    400050: RFootB_end
+    400052: RFootC
+    400054: RFootC_end
+    400056: RFootD
+    400058: RFootD_end
+    400060: RFootE
+    400062: RFootE_end
+    400064: RFootF
+    400066: RFootF_end
+    400068: RFootG
+    400070: RFootG_end
+    400072: Spine1
+    400074: Spine2
+    400076: Spine3
+    400078: Spine4
+    400080: Tail1
+    400082: Tail2
+    400084: Tail3
+    400086: Tail4
+    400088: Tail4_end
+    400090: Waist
+    400092: Weedle
+    400094: //RootNode
+    400096: Weedle_skeleton
+    2100000: pm0013_00_Body1.tga
+    2100002: pm0013_00_Eye1.tga
+    4300000: Weedle
+    7400000: Weedle_skeleton|Idle.001
+    7400002: Weedle_skeleton|Run.001
+    7400004: Weedle_skeleton|Walk.001
+    9500000: //RootNode
+    13700000: Weedle
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

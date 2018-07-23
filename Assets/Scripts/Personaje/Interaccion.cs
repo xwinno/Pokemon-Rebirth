@@ -12,20 +12,20 @@ public class Interaccion : MonoBehaviour {
 		eKey.SetBool("eKey",false);
 	}
 
-	void OnTriggerEnter(Collider other)
-	{
-		if(other.tag == "Player")
-		{
-			eKey.SetBool("eKey",true);
-		}
+	//void OnTriggerEnter(Collider other)
+	//{
+	//	if(other.tag == "Player")
+	//	{
+	//		eKey.SetBool("eKey",true);
+	//	}
 
-	}
+	//}
 
-	void OnTriggerExit(Collider other)
-	{
-		if(other.tag == "Player")
-		{
-			eKey.SetBool("eKey",false);
-		}
-	}
+	//void OnTriggerExit(Collider other)
+	//{
+	//	if(other.tag == "Player")
+	//	{
+	//		eKey.SetBool("eKey",false);
+	//	}
+	//}
 }

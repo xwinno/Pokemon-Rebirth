@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcc1fcecca250554fa926d4e0f912a0b, type: 3}
+  m_Name: Caterpie
+  m_EditorClassIdentifier: 
+  modelo: {fileID: 1809064407502854, guid: 13ff43b4aed7a874b856a567f9a09753, type: 2}
+  icono: {fileID: 21300000, guid: e711e2e213accd54691dd7494a65c775, type: 3}
+  crie: {fileID: 8300000, guid: a39a908e4eddf6c43b163c7ba14f0e88, type: 3}
+  FollowAI: {fileID: 9100000, guid: 9dd2ceb68d83a5543a73533dd9b9bcbc, type: 2}
+  PokemonController: {fileID: 9100000, guid: 120caadb90014c6498a11395f07b6593, type: 2}
+  nombre: Caterpie
+  numeroPokedex: 10

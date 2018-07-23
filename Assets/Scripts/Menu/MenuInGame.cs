@@ -111,10 +111,10 @@ public class MenuInGame : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.Escape) && cursorUnlocked == false)
 		{
 			//Sale del modo captura
-			player.GetComponent<Crosshair>().modoCaptura = false;
-			player.GetComponent<Crosshair>().iconoCaptura.enabled = false;
-			player.GetComponent<Crosshair>().consola.gameObject.SetActive(false);
-			player.GetComponent<Crosshair>().enabled = false;
+			player.GetComponent<CapturaSpawn>().modoCaptura = false;
+			player.GetComponent<CapturaSpawn>().iconoCaptura.enabled = false;
+			player.GetComponent<CapturaSpawn>().consola.gameObject.SetActive(false);
+			player.GetComponent<CapturaSpawn>().enabled = false;
 			player.GetComponent<CameraController>().enabled = false;
 
 			//Desbloquea el cursor
@@ -139,7 +139,7 @@ public class MenuInGame : MonoBehaviour {
 			Time.timeScale = 1f;
 
 			//Activa del modo captura
-			player.GetComponent<Crosshair>().enabled = true;
+			player.GetComponent<CapturaSpawn>().enabled = true;
 			player.GetComponent<CameraController>().enabled = true;
 
 			//Bloquea el cursor

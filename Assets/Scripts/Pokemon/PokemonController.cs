@@ -33,8 +33,8 @@ public class PokemonController : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.R) && pokemonControl == false)
 		{
 			pokemonControl = !pokemonControl;
-			player.GetComponent<Crosshair>().iconoCaptura.enabled = false;
-			player.GetComponent<Crosshair>().consola.gameObject.SetActive(false);
+			player.GetComponent<CapturaSpawn>().iconoCaptura.enabled = false;
+			player.GetComponent<CapturaSpawn>().consola.gameObject.SetActive(false);
 
 			//Activa camara, animador y listener pokemon
 			cameraPokemon.enabled = true;
