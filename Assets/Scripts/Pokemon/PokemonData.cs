@@ -13,5 +13,6 @@ public class PokemonData : ScriptableObject {
 	public RuntimeAnimatorController PokemonController;
 	public string nombre;
 	public int numeroPokedex;
+	public string Type;
 
 }

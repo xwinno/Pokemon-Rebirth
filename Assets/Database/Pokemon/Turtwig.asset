@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: 417a7b97bbbb20d489e6f3e8a7401663, type: 2}
   nombre: Turtwig
   numeroPokedex: 387
+  Type: Grass

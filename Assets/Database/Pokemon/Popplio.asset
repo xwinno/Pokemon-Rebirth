@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: a02e75da06a7254408d997d2478dd052, type: 2}
   nombre: Popplio
   numeroPokedex: 728
+  Type: Water

@@ -12,6 +12,7 @@ public class PokemonController : MonoBehaviour {
 	bool pokemonControl;
 	float h;
 	float v;
+	ParticleSystem ps;
 	public float sensibilidadH = 2;
 	public float sensibilidadV = 2;
 	public PokemonData animadoresPokes;
@@ -24,12 +25,20 @@ public class PokemonController : MonoBehaviour {
 		cameraPokemon = this.gameObject.GetComponentInChildren<Camera>();
 		listenerPokemon = this.gameObject.GetComponentInChildren<AudioListener>();
 		animatorPokemon = this.gameObject.GetComponent<Animator>();
+		ps = gameObject.GetComponentInChildren<ParticleSystem>();
 		
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		if(Input.GetMouseButtonUp(0) && pokemonControl == true)
+		{
+			animatorPokemon.SetTrigger("Attack");
+			ps.Play(true);
+		}
+
+
 		if(Input.GetKeyDown(KeyCode.R) && pokemonControl == false)
 		{
 			pokemonControl = !pokemonControl;

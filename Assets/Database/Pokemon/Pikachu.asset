@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: dcafd275c37255a4c8fead549d6e2e77, type: 2}
   nombre: Pikachu
   numeroPokedex: 25
+  Type: Electric

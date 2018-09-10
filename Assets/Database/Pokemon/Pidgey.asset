@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: 8436a12d1fa1ba4408269f8371004e98, type: 2}
   nombre: Pidgey
   numeroPokedex: 16
+  Type: Fly

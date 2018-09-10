@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: 16f275db3f7d79b4eab2bcb30fc1127b, type: 2}
   nombre: Bulbasur
   numeroPokedex: 1
+  Type: Grass

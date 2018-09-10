@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: 5eca24cf580da2749bc5206251230720, type: 2}
   nombre: Torchic
   numeroPokedex: 255
+  Type: Fire

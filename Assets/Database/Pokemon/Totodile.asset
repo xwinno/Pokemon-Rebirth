@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: 8e861b37ef95cdb4ab589cb4a0d94858, type: 2}
   nombre: Totodile
   numeroPokedex: 158
+  Type: Water

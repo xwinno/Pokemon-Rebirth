@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: e5362fab4384c544ea26a670cba24bc2, type: 2}
   nombre: Tepig
   numeroPokedex: 498
+  Type: Fire
