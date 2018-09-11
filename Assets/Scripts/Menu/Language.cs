@@ -57,7 +57,7 @@ public class Language : MonoBehaviour {
 			english = elegido.english;
 			
 			//Avisa de la creacion del archivo
-		    Debug.Log("Created");
+		  	Debug.Log("Archivo de lenguaje creado satisfactoriamente");
 	   }
 
 	   else

@@ -3,24 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class CargarPosicion : MonoBehaviour {
-	
-	public GameObject Player;
+public class EventsManager : MonoBehaviour {
+
+	public bool[] events;
 	string filePath;
 	string readFile;
-	
-
 
 	void Awake()
 	{
 		//Proporciona la direccion de las partidas guardas
-		filePath = Application.persistentDataPath + "/Save/Posicion.json";
-
+		filePath = Application.persistentDataPath + "/Save/Events.json";
+		
 		//Busca si hay una partida guardada.
 		CargarArchivo();
-
-		//Lee el archivo
-		readFile = File.ReadAllText(filePath);
 
 		if(ChangeLevel.instance.cargar == true)
 		{
@@ -33,7 +28,7 @@ public class CargarPosicion : MonoBehaviour {
 		if (!File.Exists(filePath))
 	   	{	
 		 	//Avisa de la creacion del archivo
-		  	Debug.Log("Archivo de posicion inexistente");
+		  	Debug.Log("Archivo de eventos inexistente");
 	   	}
 
 	 	else
@@ -42,14 +37,23 @@ public class CargarPosicion : MonoBehaviour {
 		    readFile = File.ReadAllText(filePath);
 	    }
 	}
+
 	void Load()
 	{
-		Save mySave = JsonUtility.FromJson<Save>(readFile);
+		EventsDone mySave = JsonUtility.FromJson<EventsDone>(readFile);
 
-		Debug.Log("Cargando Posicion...");
+		Debug.Log("Cargando Eventos...");
 
-		//Carga la posicion del jugador
-		Player.transform.position = mySave.posicion;
-		Player.transform.rotation = mySave.rotacion;	
+		//Carga el equipo del jugador
+		events[0] = mySave.fuegoApagado;
+		events[1] = mySave.plataforma;
 	}
+}
+
+[System.Serializable]
+public class EventsDone {
+
+	public bool fuegoApagado;
+	public bool plataforma;
+
 }

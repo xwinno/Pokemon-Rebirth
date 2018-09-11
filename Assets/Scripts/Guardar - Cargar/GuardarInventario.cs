@@ -28,7 +28,7 @@ public class GuardarInventario : MonoBehaviour {
 		   readFile = File.ReadAllText(filePath);
 
 		   //Avisa de la creacion del archivo
-		   Debug.Log("Created");
+		   Debug.Log("Archivo de inventario creado satisfactoriamente");
 	   }
 
 	   else

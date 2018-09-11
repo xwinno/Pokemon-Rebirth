@@ -18,3 +18,4 @@ MonoBehaviour:
   PokemonController: {fileID: 9100000, guid: 120caadb90014c6498a11395f07b6593, type: 2}
   nombre: Caterpie
   numeroPokedex: 10
+  Type: Bug

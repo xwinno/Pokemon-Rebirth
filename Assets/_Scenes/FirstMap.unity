@@ -2560,6 +2560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 7
   pokemon: {fileID: 11400000, guid: 6abd5091b2808b04ca2d79209edf029e, type: 2}
   crie: {fileID: 1634116110}
 --- !u!95 &167358895
@@ -4480,7 +4482,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 287544385}
-        m_MethodName: Save
+        m_MethodName: GuardarArchivo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4508,7 +4510,29 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 1
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 287544393}
+        m_MethodName: CargarArchivo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 287544394}
+        m_MethodName: CargarArchivo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -5177,6 +5201,10 @@ GameObject:
   - component: {fileID: 287544390}
   - component: {fileID: 287544389}
   - component: {fileID: 287544391}
+  - component: {fileID: 287544392}
+  - component: {fileID: 287544393}
+  - component: {fileID: 287544395}
+  - component: {fileID: 287544394}
   m_Layer: 0
   m_Name: Administrador (InGame)
   m_TagString: Untagged
@@ -5315,7 +5343,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: de0b43ba68516904384cfa18cd29927a, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -6030,6 +6058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a72a8d8dfed35a74f8815c59363d4225, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  equipo: {fileID: 287544389}
 --- !u!114 &287544388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6077,6 +6106,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastPick: {fileID: 1666795793}
   myInventory: []
+--- !u!114 &287544392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287544378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9cf073f9681af43ae1a7da7cefd9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Captured: 0000000000000000
+--- !u!114 &287544393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287544378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f7aa157ea91ce4b94e4473775a8d45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &287544394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287544378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d3fb9e09787b8846b79fe10f2cd46ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &287544395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 287544378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b5f84580199f164d92ad1a34996fccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  events: 0000
 --- !u!1 &289256669
 GameObject:
   m_ObjectHideFlags: 0
@@ -7550,6 +7625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 2
   pokemon: {fileID: 11400000, guid: 3ff9fd17d0b55694f895bbaf43a9fa64, type: 2}
   crie: {fileID: 1634116110}
 --- !u!137 &360102760
@@ -10391,6 +10468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 4
   pokemon: {fileID: 11400000, guid: de0b43ba68516904384cfa18cd29927a, type: 2}
   crie: {fileID: 1634116110}
 --- !u!54 &540826379
@@ -14106,6 +14185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a41cfbd63d5034ca31d1af8dca773c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventNumber: 1
+  eventsManager: {fileID: 287544395}
 --- !u!1 &770244978
 GameObject:
   m_ObjectHideFlags: 0
@@ -14958,6 +15039,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 0
   pokemon: {fileID: 11400000, guid: c366f3a195b715840b38075e11bd5c30, type: 2}
   crie: {fileID: 1634116110}
 --- !u!135 &817883659
@@ -20590,6 +20673,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 5
   pokemon: {fileID: 11400000, guid: 897522e5ca3db1f41a6def4986b7efe9, type: 2}
   crie: {fileID: 1634116110}
 --- !u!1001 &1150270998
@@ -21143,6 +21228,11 @@ Prefab:
       propertyPath: m_Center.y
       value: 4.546569
       objectReference: {fileID: 0}
+    - target: {fileID: 114660283661370398, guid: e2e4cbc3e9a6aae49bb66f3158ba57bd,
+        type: 2}
+      propertyPath: EventsManager
+      value: 
+      objectReference: {fileID: 287544395}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e4cbc3e9a6aae49bb66f3158ba57bd, type: 2}
   m_IsPrefabAsset: 0
@@ -22030,6 +22120,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228315955}
   - component: {fileID: 1228315954}
+  - component: {fileID: 1228315956}
   m_Layer: 0
   m_Name: Wall Controller
   m_TagString: Untagged
@@ -22071,6 +22162,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1228315956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1228315953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2d610a030bc904d8d57b5920306c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventNumber: 1
+  EventsManager: {fileID: 287544395}
 --- !u!1 &1228912180
 GameObject:
   m_ObjectHideFlags: 0
@@ -24736,6 +24840,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 0}
+  numberSave: 0
   pokemon: {fileID: 11400000, guid: 134d888651865d84d83e561d3c696913, type: 2}
   crie: {fileID: 1634116110}
 --- !u!135 &1414568001
@@ -26844,6 +26950,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 1
   pokemon: {fileID: 11400000, guid: f426968d336c2c64c8326ae2b8316d51, type: 2}
   crie: {fileID: 1634116110}
 --- !u!54 &1561137401
@@ -31747,6 +31855,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 3
   pokemon: {fileID: 11400000, guid: c3ced0b46b215a64892cbb90f79a8908, type: 2}
   crie: {fileID: 1634116110}
 --- !u!135 &1834570091
@@ -33776,6 +33886,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eKey: {fileID: 356736589}
+  Spawner: {fileID: 287544378}
+  numberSave: 6
   pokemon: {fileID: 11400000, guid: 810196e14d886e44abb0712e06cf20fc, type: 2}
   crie: {fileID: 1634116110}
 --- !u!1 &1929349654

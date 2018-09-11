@@ -19,7 +19,7 @@ public class ChangeLevel : MonoBehaviour {
 		//Crea el archivo
 		filePath = Application.persistentDataPath + "/Save/Posicion.json";
 		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-		CrearArchivo();;
+		CrearArchivo();
 
 		//Busca el fade
 		fade = GameObject.FindGameObjectWithTag("Fade");
@@ -35,8 +35,11 @@ public class ChangeLevel : MonoBehaviour {
 		   //Crea el archivo de guardado
 		   File.Copy(Application.streamingAssetsPath + "/Jugador/Posicion.json", filePath);
 
+		   //Lee el archivo
+		   	readFile = File.ReadAllText(filePath);
+
 		   //Avisa de que existe el archivo
-		   Debug.Log("Created");
+		   Debug.Log("Archivo de posicion creado satisfactoriamente...");
 	   }
 
 	   else

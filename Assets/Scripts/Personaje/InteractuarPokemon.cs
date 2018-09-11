@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InteractuarPokemon : Interaccion {
 
+	public GameObject Spawner;
+	public int numberSave;
 	public PokemonData pokemon;
 	public AudioSource crie;
 
@@ -18,12 +20,25 @@ public class InteractuarPokemon : Interaccion {
 		//Añade a tu equipo
 		Capturar();
 	}
+
+	void Start()
+	{
+		var capturados = Spawner.GetComponent<LoadSpawn>();
+
+		if(capturados.Captured[numberSave] == true)
+		{
+			Destroy(this.gameObject);
+		}
+	}
+	
 	void Capturar()
 	{
 		bool FueCapturado = EquipoPokemon.instace.Añadir(pokemon);
-
+		var capturados = Spawner.GetComponent<LoadSpawn>();
+		
 		if(FueCapturado)
 		{
+			capturados.Captured[numberSave] = true;
 			Destroy(gameObject);
 		}
 	}

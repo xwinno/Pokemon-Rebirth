@@ -10,12 +10,14 @@ public class GuardaEquipo : MonoBehaviour {
 
 	void Awake()
 	{
+		//Proporciona la direccion de las partidas guardas
 		filePath = Application.persistentDataPath + "/Save/TeamSave.json";
+		
+		//Busca el script
 		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-		CrearArchivo();
 	}
 
-	void CrearArchivo()
+	public void GuardarArchivo()
 	{
        if (!File.Exists(filePath))
 	   {
@@ -26,16 +28,23 @@ public class GuardaEquipo : MonoBehaviour {
 		   readFile = File.ReadAllText(filePath);
 
 		   //Avisa de la creacion del archivo
-		   Debug.Log("Created");
+		   Debug.Log("Archivo de equipo creado satisfactoriamente");
+
+		   //Guardar Partida	
+		   Save();
 	   }
 
 	   else
-	   {	//Lee el archivo
-		    readFile = File.ReadAllText(filePath);
+	   {	
+		   //Lee el archivo
+		   readFile = File.ReadAllText(filePath);
+		   
+		   //Guardar Partida	
+		   Save();
 	   }
 	}
 
-	public void Save()
+	void Save()
 	{
 		TeamData mySave = JsonUtility.FromJson<TeamData>(readFile);
 		

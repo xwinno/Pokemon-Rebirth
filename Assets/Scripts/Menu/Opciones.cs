@@ -44,7 +44,7 @@ public class Opciones : MonoBehaviour {
 		   readFile = File.ReadAllText(filePath);
 
 		   //Avisa de la creacion del archivo
-		   Debug.Log("Created");
+		Debug.Log("Archivo de opciones creado satisfactoriamente");
 	   }
 
 	   else

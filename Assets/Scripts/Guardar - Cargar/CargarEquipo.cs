@@ -5,17 +5,21 @@ using System.IO;
 
 public class CargarEquipo : MonoBehaviour {
 
+	public EquipoPokemon equipo;
 	string filePath;
 	string readFile;
-	EquipoPokemon equipo;
 
 
 	void Awake()
 	{
+		//Proporciona la direccion de las partidas guardas
 		filePath = Application.persistentDataPath + "/Save/TeamSave.json";
-		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-		equipo = EquipoPokemon.instace;
-		CrearArchivo();
+
+		//Busca el script
+		equipo = gameObject.GetComponent<EquipoPokemon>();
+		
+		//Busca si hay una partida guardada.
+		CargarArchivo();
 
 		if(ChangeLevel.instance.cargar == true)
 		{
@@ -23,19 +27,12 @@ public class CargarEquipo : MonoBehaviour {
 		}
 	}
 
-	void CrearArchivo()
+	void CargarArchivo()
 	{
-       	
 		if (!File.Exists(filePath))
 	   	{	
-			//Crea el archivo de guardado
-		  	File.Copy(Application.streamingAssetsPath + "/Jugador/TeamSave.json", filePath);
-
-		   	//Lee el archivo
-		   	readFile = File.ReadAllText(filePath);
-
 		 	//Avisa de la creacion del archivo
-		  	Debug.Log("Created");
+		  	Debug.Log("Archivo de equipo inexistente");
 	   	}
 
 	 	else
@@ -49,6 +46,8 @@ public class CargarEquipo : MonoBehaviour {
 	{
 		var database = PokemonDatabase.instance;
 		TeamData mySave = JsonUtility.FromJson<TeamData>(readFile);
+
+		Debug.Log("Cargando Equipo...");
 
 		//Carga el equipo del jugador
 		if(mySave.firstSlot > 0)

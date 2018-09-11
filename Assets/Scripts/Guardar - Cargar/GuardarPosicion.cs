@@ -29,7 +29,7 @@ public class GuardarPosicion : MonoBehaviour {
 		   readFile = File.ReadAllText(filePath);
 
 		   //Avisa de la creacion del archivo
-		   Debug.Log("Created");
+		   Debug.Log("Archivo de posicion creado satisfactoriamente");
 	   }
 
 	   else
