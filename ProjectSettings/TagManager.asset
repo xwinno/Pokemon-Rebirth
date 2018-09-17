@@ -12,6 +12,8 @@ TagManager:
   - Objeto
   - Pokeball
   - PokemonCamera
+  - NPC
+  - Dialogos
   layers:
   - Default
   - TransparentFX

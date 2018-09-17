@@ -712,8 +712,8 @@ RectTransform:
   - {fileID: 826379051}
   - {fileID: 474938998}
   - {fileID: 1262561501}
-  - {fileID: 1072723164}
   - {fileID: 568019388}
+  - {fileID: 1072723164}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -826,7 +826,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 510832398}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -1553,12 +1553,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072723163}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 510832398}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2192,6 +2192,7 @@ GameObject:
   - component: {fileID: 1490982240}
   - component: {fileID: 1490982241}
   - component: {fileID: 1490982242}
+  - component: {fileID: 1490982243}
   m_Layer: 0
   m_Name: Administrador (General)
   m_TagString: Untagged
@@ -2232,6 +2233,10 @@ MonoBehaviour:
   ultra: {fileID: 710875263}
   medio: {fileID: 2146115483}
   bajo: {fileID: 1546569688}
+  volumeSettings: {fileID: 0}
+  ultraSettings: {fileID: 0}
+  mediumSettings: {fileID: 0}
+  lowSettings: {fileID: 0}
 --- !u!114 &1490982242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2251,6 +2256,21 @@ MonoBehaviour:
   atras: {fileID: 112983989}
   media: {fileID: 523999202}
   baja: {fileID: 889296545}
+--- !u!114 &1490982243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490982239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0db599bfd910fa849bf9d6ab44ad891d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeSettings: {fileID: 0}
+  ultra: {fileID: 11400000, guid: 86e704f624ffed849acc6fd579024e5b, type: 2}
+  medium: {fileID: 11400000, guid: dab0766de4a4b5349b80ce1a86555414, type: 2}
+  low: {fileID: 11400000, guid: 470f7bffa872a964eb29bae7b25d7e7d, type: 2}
 --- !u!1 &1546569688
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3220,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2057851699}
   - component: {fileID: 2057851698}
-  - component: {fileID: 2057851700}
   - component: {fileID: 2057851697}
   m_Layer: 0
   m_Name: Gestion Partidas
@@ -3248,17 +3267,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2057851700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2057851696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db599bfd910fa849bf9d6ab44ad891d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2116155194
 GameObject:
   m_ObjectHideFlags: 0

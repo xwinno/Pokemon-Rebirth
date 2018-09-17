@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: VolumeSettings
+  m_Name: VolumeSettings_Medium
   m_EditorClassIdentifier: 
   components:
   - {fileID: 114527594671542966}
@@ -156,7 +156,7 @@ MonoBehaviour:
     max: 360
   exposure:
     m_OverrideState: 1
-    m_Value: 1.25
+    m_Value: 1
   multiplier:
     m_OverrideState: 1
     m_Value: 1
@@ -166,11 +166,11 @@ MonoBehaviour:
     m_Value: 0
   updatePeriod:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 2
     min: 0
   sunSize:
     m_OverrideState: 1
-    m_Value: 0.04
+    m_Value: 0.03
     min: 0
     max: 1
   sunSizeConvergence:

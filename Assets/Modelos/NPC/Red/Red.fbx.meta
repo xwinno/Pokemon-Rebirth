@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 0c2e2a37bd0620d41b3ec4267a9a6604
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bag1
+    100002: Bag2
+    100004: Bag2_end
+    100006: CamTgtBody
+    100008: CamTgtBody_end
+    100010: CamTgtBust
+    100012: CamTgtBust_end
+    100014: CamTgtFoot
+    100016: CamTgtFoot_end
+    100018: CamTgtHead
+    100020: CamTgtHead_end
+    100022: Head
+    100024: Hips
+    100026: LArm
+    100028: LFingerA
+    100030: LFingerA_end
+    100032: LFingerB1
+    100034: LFingerB2
+    100036: LFingerB2_end
+    100038: LFoot
+    100040: LForeArm
+    100042: LForeArmEX
+    100044: LForeArmEX_end
+    100046: LHand
+    100048: LLeg
+    100050: Loc_Eye
+    100052: Loc_Eye_end
+    100054: Loc_Head
+    100056: Loc_Head_end
+    100058: Loc_Mouth
+    100060: Loc_Mouth_end
+    100062: LShoulder
+    100064: LThigh
+    100066: LToe
+    100068: LToe_end
+    100070: Neck
+    100072: Origin
+    100074: RArm
+    100076: Red
+    100078: //RootNode
+    100080: Red_skeleton
+    100082: RFingerA
+    100084: RFingerA_end
+    100086: RFingerB1
+    100088: RFingerB2
+    100090: RFingerB2_end
+    100092: RFoot
+    100094: RForeArm
+    100096: RForeArmEX
+    100098: RForeArmEX_end
+    100100: RHand
+    100102: RLeg
+    100104: RShoulder
+    100106: RThigh
+    100108: RToe
+    100110: RToe_end
+    100112: Spine2
+    100114: Spine3
+    100116: tr0037_00_fi
+    100118: tr0037_00_fi_BodySkin
+    100120: tr0037_00_fi_BodySkin_end
+    100122: tr0037_00_fi_BottomSkin
+    100124: tr0037_00_fi_BottomSkin_end
+    100126: tr0037_00_fi_CapSkin
+    100128: tr0037_00_fi_CapSkin_end
+    100130: tr0037_00_fi_FaceSkin
+    100132: tr0037_00_fi_FaceSkin_end
+    100134: tr0037_00_fi_HairSkin
+    100136: tr0037_00_fi_HairSkin_end
+    100138: tr0037_00_fi_PartsSkin
+    100140: tr0037_00_fi_PartsSkin_end
+    100142: Waist
+    400000: Bag1
+    400002: Bag2
+    400004: Bag2_end
+    400006: CamTgtBody
+    400008: CamTgtBody_end
+    400010: CamTgtBust
+    400012: CamTgtBust_end
+    400014: CamTgtFoot
+    400016: CamTgtFoot_end
+    400018: CamTgtHead
+    400020: CamTgtHead_end
+    400022: Head
+    400024: Hips
+    400026: LArm
+    400028: LFingerA
+    400030: LFingerA_end
+    400032: LFingerB1
+    400034: LFingerB2
+    400036: LFingerB2_end
+    400038: LFoot
+    400040: LForeArm
+    400042: LForeArmEX
+    400044: LForeArmEX_end
+    400046: LHand
+    400048: LLeg
+    400050: Loc_Eye
+    400052: Loc_Eye_end
+    400054: Loc_Head
+    400056: Loc_Head_end
+    400058: Loc_Mouth
+    400060: Loc_Mouth_end
+    400062: LShoulder
+    400064: LThigh
+    400066: LToe
+    400068: LToe_end
+    400070: Neck
+    400072: Origin
+    400074: RArm
+    400076: //RootNode
+    400078: Red
+    400080: Red_skeleton
+    400082: RFingerA
+    400084: RFingerA_end
+    400086: RFingerB1
+    400088: RFingerB2
+    400090: RFingerB2_end
+    400092: RFoot
+    400094: RForeArm
+    400096: RForeArmEX
+    400098: RForeArmEX_end
+    400100: RHand
+    400102: RLeg
+    400104: RShoulder
+    400106: RThigh
+    400108: RToe
+    400110: RToe_end
+    400112: Spine2
+    400114: Spine3
+    400116: tr0037_00_fi
+    400118: tr0037_00_fi_BodySkin
+    400120: tr0037_00_fi_BodySkin_end
+    400122: tr0037_00_fi_BottomSkin
+    400124: tr0037_00_fi_BottomSkin_end
+    400126: tr0037_00_fi_CapSkin
+    400128: tr0037_00_fi_CapSkin_end
+    400130: tr0037_00_fi_FaceSkin
+    400132: tr0037_00_fi_FaceSkin_end
+    400134: tr0037_00_fi_HairSkin
+    400136: tr0037_00_fi_HairSkin_end
+    400138: tr0037_00_fi_PartsSkin
+    400140: tr0037_00_fi_PartsSkin_end
+    400142: Waist
+    2100000: tr0037_00_Eye.tga
+    2100002: tr0037_00_Body.tga
+    4300000: Red
+    7400000: Red - End Speaking
+    7400002: Red - Idle
+    7400004: Red - Run
+    7400006: Red - Sit
+    7400008: Red - Start Speaking
+    7400010: Red - Thinking
+    7400012: Red - Walk
+    7400014: Red - While Speaking
+    9500000: //RootNode
+    13700000: Red
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tr0037_00_Body.tga
+    second: {fileID: 2100000, guid: fa0572b16505f6b4794616ef599e135c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tr0037_00_Eye.tga
+    second: {fileID: 2100000, guid: f85879e632afca74fa30dab02709b7a8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Red - End Speaking
+      takeName: Red_skeleton|End Speaking
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - Idle
+      takeName: Red_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - Run
+      takeName: Red_skeleton|Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - Sit
+      takeName: Red_skeleton|Sit
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - Start Speaking
+      takeName: Red_skeleton|Start Speaking
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - Thinking
+      takeName: Red_skeleton|Thinking
+      firstFrame: 0
+      lastFrame: 89
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - Walk
+      takeName: Red_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Red - While Speaking
+      takeName: Red_skeleton|While Speaking
+      firstFrame: 0
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

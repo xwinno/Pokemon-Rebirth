@@ -3,171 +3,196 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class Opciones : MonoBehaviour {
-
-	string filePath;
-	string readFile;
-
-	//Principal
-	public GameObject nuevaPartida;
-	public GameObject cargarPartida;
-	public GameObject opciones;
-
-	//Opciones
-	public GameObject calidad;
-	public GameObject lenguaje;
-	public GameObject atras;
-
-	//Calidad
-	public GameObject ultra;
-	public GameObject medio;
-	public GameObject bajo;
-
-	void Awake()
-	{
-		filePath = Application.persistentDataPath + "/Save/ConfiguracionGrafica.json";
-
-		//Crea el archivo
-		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
-		CrearArchivo();
-	}
+namespace UnityEngine.Experimental.Rendering
+{
 
 
-	void CrearArchivo()
-	{
-       if (!File.Exists(filePath))
-	   {	
-		   //Crea el archivo de guardado
-		   File.Copy(Application.streamingAssetsPath + "/Jugador/ConfiguracionGrafica.json",filePath);
+
+	public class Opciones : MonoBehaviour {
+
+		string filePath;
+		string readFile;
+
+		//Principal
+		public GameObject nuevaPartida;
+		public GameObject cargarPartida;
+		public GameObject opciones;
+
+		//Opciones
+		public GameObject calidad;
+		public GameObject lenguaje;
+		public GameObject atras;
+
+		//Calidad
+		public GameObject ultra;
+		public GameObject medio;
+		public GameObject bajo;
+
+		//Ajustes de Calidad
+		public Volume volumeSettings;
+		public VolumeProfile ultraSettings;
+		public VolumeProfile mediumSettings;
+		public VolumeProfile lowSettings;
+
+		void Awake()
+		{
+			//Proporciona la direccion de las partidas guardas
+			filePath = Application.persistentDataPath + "/Save/ConfiguracionGrafica.json";
+
+			//Crea el archivo
+			Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
+			CrearArchivo();
+
+			//Busca los ajustes de calidad
+			volumeSettings = GameObject.FindGameObjectWithTag("Volume").GetComponent<Volume>();
+		}
+
+
+		void CrearArchivo()
+		{
+		if (!File.Exists(filePath))
+		{	
+			//Crea el archivo de guardado
+			File.Copy(Application.streamingAssetsPath + "/Jugador/ConfiguracionGrafica.json",filePath);
+				
+			//Lee el archivo
+			readFile = File.ReadAllText(filePath);
+
+			//Avisa de la creacion del archivo
+			Debug.Log("Archivo de opciones creado satisfactoriamente");
+		}
+
+		else
+		{	
+			//Lee el archivo
+				readFile = File.ReadAllText(filePath);
+		}
+		}
+
+		public void Salir()
+		{
+			Application.Quit();
+		}
+
+		public void MenuOpciones()
+		{	
+			//Desactiva el menu anterior
+			nuevaPartida.SetActive(false);
+			cargarPartida.SetActive(false);
+			opciones.SetActive(false);
 			
-		   //Lee el archivo
-		   readFile = File.ReadAllText(filePath);
+			//Activa el siguiente menu
+			calidad.SetActive(true);
+			lenguaje.SetActive(true);
+			atras.SetActive(true);
+		}
 
-		   //Avisa de la creacion del archivo
-		Debug.Log("Archivo de opciones creado satisfactoriamente");
-	   }
+		public void MenuPrincipal()
+		{
+			//Activa el siguiente menu
+			nuevaPartida.SetActive(true);
+			cargarPartida.SetActive(true);
+			opciones.SetActive(true);
 
-	   else
-	   {	
-		   //Lee el archivo
-		    readFile = File.ReadAllText(filePath);
-	   }
+			//Desactiva el menu anterior
+			calidad.SetActive(false);
+			lenguaje.SetActive(false);
+			atras.SetActive(false);
+		}
+
+		public void Calidad()
+		{
+			//Desactiva el menu anterior
+			calidad.SetActive(false);
+			lenguaje.SetActive(false);
+			atras.SetActive(false);
+
+			//Activa el siguiente menu
+			ultra.SetActive(true);
+			medio.SetActive(true);
+			bajo.SetActive(true);
+
+		}
+
+		public void Ultra()
+		{
+			//Cambia la calidad
+			QualitySettings.SetQualityLevel(6, true);
+
+			//Ajusta la calidad
+			volumeSettings.sharedProfile = ultraSettings;
+
+			//Guardar Configuracion
+			ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
+			myCalidad.calidad = 6;
+
+			var guardar = JsonUtility.ToJson(myCalidad);
+			File.WriteAllText(filePath, guardar);
+
+			//Activa el siguiente menu
+			calidad.SetActive(true);
+			lenguaje.SetActive(true);
+			atras.SetActive(true);
+
+			//Desactiva el anterior menu
+			ultra.SetActive(false);
+			medio.SetActive(false);
+			bajo.SetActive(false);
+		}
+
+		public void Medio()
+		{
+			//Cambia la calidad
+			QualitySettings.SetQualityLevel(2, true);
+
+			//Ajusta la calidad
+			volumeSettings.sharedProfile = mediumSettings;
+
+			//Guardar Configuracion
+			ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
+			myCalidad.calidad = 2;
+
+			var guardar = JsonUtility.ToJson(myCalidad);
+			File.WriteAllText(filePath, guardar);
+
+			//Activa el siguiente menu
+			calidad.SetActive(true);
+			lenguaje.SetActive(true);
+			atras.SetActive(true);
+
+			//Desactiva el anterior menu
+			ultra.SetActive(false);
+			medio.SetActive(false);
+			bajo.SetActive(false);
+		}
+
+		public void Bajo()
+		{
+			//Cambia la calidad
+			QualitySettings.SetQualityLevel(0, true);
+
+			//Ajusta la calidad
+			volumeSettings.sharedProfile = lowSettings;	
+
+			//Guardar Configuracion
+			ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
+			myCalidad.calidad = 0;
+
+			var guardar = JsonUtility.ToJson(myCalidad);
+			File.WriteAllText(filePath, guardar);
+			
+			//Activa el siguiente menu
+			calidad.SetActive(true);
+			lenguaje.SetActive(true);
+			atras.SetActive(true);
+
+			//Desactiva el anterior menu
+			ultra.SetActive(false);
+			medio.SetActive(false);
+			bajo.SetActive(false);
+		}
+
 	}
-
-	public void Salir()
-	{
-		Application.Quit();
-	}
-
-	public void MenuOpciones()
-	{	
-		//Desactiva el menu anterior
-		nuevaPartida.SetActive(false);
-		cargarPartida.SetActive(false);
-		opciones.SetActive(false);
-		
-		//Activa el siguiente menu
-		calidad.SetActive(true);
-		lenguaje.SetActive(true);
-		atras.SetActive(true);
-	}
-
-	public void MenuPrincipal()
-	{
-		//Activa el siguiente menu
-		nuevaPartida.SetActive(true);
-		cargarPartida.SetActive(true);
-		opciones.SetActive(true);
-
-		//Desactiva el menu anterior
-		calidad.SetActive(false);
-		lenguaje.SetActive(false);
-		atras.SetActive(false);
-	}
-
-	public void Calidad()
-	{
-		//Desactiva el menu anterior
-		calidad.SetActive(false);
-		lenguaje.SetActive(false);
-		atras.SetActive(false);
-
-		//Activa el siguiente menu
-		ultra.SetActive(true);
-		medio.SetActive(true);
-		bajo.SetActive(true);
-
-	}
-
-	public void Ultra()
-	{
-		//Cambia la calidad
-		QualitySettings.SetQualityLevel(6, true);
-
-		//Guardar Configuracion
-		ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
-		myCalidad.calidad = 6;
-
-		var guardar = JsonUtility.ToJson(myCalidad);
-		File.WriteAllText(filePath, guardar);
-
-		//Activa el siguiente menu
-		calidad.SetActive(true);
-		lenguaje.SetActive(true);
-		atras.SetActive(true);
-
-		//Desactiva el anterior menu
-		ultra.SetActive(false);
-		medio.SetActive(false);
-		bajo.SetActive(false);
-	}
-
-	public void Medio()
-	{
-		//Cambia la calidad
-		QualitySettings.SetQualityLevel(2, true);
-
-		//Guardar Configuracion
-		ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
-		myCalidad.calidad = 2;
-
-		var guardar = JsonUtility.ToJson(myCalidad);
-		File.WriteAllText(filePath, guardar);
-
-		//Activa el siguiente menu
-		calidad.SetActive(true);
-		lenguaje.SetActive(true);
-		atras.SetActive(true);
-
-		//Desactiva el anterior menu
-		ultra.SetActive(false);
-		medio.SetActive(false);
-		bajo.SetActive(false);
-	}
-
-	public void Bajo()
-	{
-		//Cambia la calidad
-		QualitySettings.SetQualityLevel(0, true);
-
-		//Guardar Configuracion
-		ConfiguracionGrafica myCalidad = JsonUtility.FromJson<ConfiguracionGrafica>(readFile);
-		myCalidad.calidad = 0;
-
-		var guardar = JsonUtility.ToJson(myCalidad);
-		File.WriteAllText(filePath, guardar);
-		
-		//Activa el siguiente menu
-		calidad.SetActive(true);
-		lenguaje.SetActive(true);
-		atras.SetActive(true);
-
-		//Desactiva el anterior menu
-		ultra.SetActive(false);
-		medio.SetActive(false);
-		bajo.SetActive(false);
-	}
-
 }
 
 [System.Serializable]
