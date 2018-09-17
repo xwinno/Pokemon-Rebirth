@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: 71070e46a9b2f66458c8c4737f13db5a
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Bag1
+    100002: Bag1_end
+    100004: Bag2
+    100006: Bag2_end
+    100008: CamTgtBody
+    100010: CamTgtBody_end
+    100012: CamTgtBust
+    100014: CamTgtBust_end
+    100016: CamTgtFoot
+    100018: CamTgtFoot_end
+    100020: CamTgtHead
+    100022: CamTgtHead_end
+    100024: //RootNode
+    100026: Green
+    100028: Green_skeleton
+    100030: Head
+    100032: Hips
+    100034: LArm
+    100036: LFingerA
+    100038: LFingerA_end
+    100040: LFingerB1
+    100042: LFingerB2
+    100044: LFingerB2_end
+    100046: LFoot
+    100048: LForeArm
+    100050: LForeArmEX
+    100052: LForeArmEX_end
+    100054: LHand
+    100056: LLeg
+    100058: Loc_Eye
+    100060: Loc_Eye_end
+    100062: Loc_Head
+    100064: Loc_Head_end
+    100066: Loc_Mouth
+    100068: Loc_Mouth_end
+    100070: LParts
+    100072: LParts_end
+    100074: LShoulder
+    100076: LThigh
+    100078: LToe
+    100080: LToe_end
+    100082: Neck
+    100084: Origin
+    100086: RArm
+    100088: RFingerA
+    100090: RFingerA_end
+    100092: RFingerB1
+    100094: RFingerB2
+    100096: RFingerB2_end
+    100098: RFoot
+    100100: RForeArm
+    100102: RForeArmEX
+    100104: RForeArmEX_end
+    100106: RHand
+    100108: RLeg
+    100110: RParts
+    100112: RParts_end
+    100114: RShoulder
+    100116: RThigh
+    100118: RToe
+    100120: RToe_end
+    100122: Spine2
+    100124: Spine3
+    100126: tr0038_00_fi
+    100128: tr0038_00_fi_BagSkin
+    100130: tr0038_00_fi_BagSkin_end
+    100132: tr0038_00_fi_BodySkin
+    100134: tr0038_00_fi_BodySkin_end
+    100136: tr0038_00_fi_BottomSkin
+    100138: tr0038_00_fi_BottomSkin_end
+    100140: tr0038_00_fi_FaceSkin
+    100142: tr0038_00_fi_FaceSkin_end
+    100144: tr0038_00_fi_HairSkin
+    100146: tr0038_00_fi_HairSkin_end
+    100148: Waist
+    400000: Bag1
+    400002: Bag1_end
+    400004: Bag2
+    400006: Bag2_end
+    400008: CamTgtBody
+    400010: CamTgtBody_end
+    400012: CamTgtBust
+    400014: CamTgtBust_end
+    400016: CamTgtFoot
+    400018: CamTgtFoot_end
+    400020: CamTgtHead
+    400022: CamTgtHead_end
+    400024: //RootNode
+    400026: Green
+    400028: Green_skeleton
+    400030: Head
+    400032: Hips
+    400034: LArm
+    400036: LFingerA
+    400038: LFingerA_end
+    400040: LFingerB1
+    400042: LFingerB2
+    400044: LFingerB2_end
+    400046: LFoot
+    400048: LForeArm
+    400050: LForeArmEX
+    400052: LForeArmEX_end
+    400054: LHand
+    400056: LLeg
+    400058: Loc_Eye
+    400060: Loc_Eye_end
+    400062: Loc_Head
+    400064: Loc_Head_end
+    400066: Loc_Mouth
+    400068: Loc_Mouth_end
+    400070: LParts
+    400072: LParts_end
+    400074: LShoulder
+    400076: LThigh
+    400078: LToe
+    400080: LToe_end
+    400082: Neck
+    400084: Origin
+    400086: RArm
+    400088: RFingerA
+    400090: RFingerA_end
+    400092: RFingerB1
+    400094: RFingerB2
+    400096: RFingerB2_end
+    400098: RFoot
+    400100: RForeArm
+    400102: RForeArmEX
+    400104: RForeArmEX_end
+    400106: RHand
+    400108: RLeg
+    400110: RParts
+    400112: RParts_end
+    400114: RShoulder
+    400116: RThigh
+    400118: RToe
+    400120: RToe_end
+    400122: Spine2
+    400124: Spine3
+    400126: tr0038_00_fi
+    400128: tr0038_00_fi_BagSkin
+    400130: tr0038_00_fi_BagSkin_end
+    400132: tr0038_00_fi_BodySkin
+    400134: tr0038_00_fi_BodySkin_end
+    400136: tr0038_00_fi_BottomSkin
+    400138: tr0038_00_fi_BottomSkin_end
+    400140: tr0038_00_fi_FaceSkin
+    400142: tr0038_00_fi_FaceSkin_end
+    400144: tr0038_00_fi_HairSkin
+    400146: tr0038_00_fi_HairSkin_end
+    400148: Waist
+    2100000: tr0038_00_Body.tga
+    2100002: tr0038_00_Eye.tga
+    4300000: Green
+    7400000: Green - End Speak
+    7400002: Green - Idle
+    7400004: Green - Run
+    7400006: Green - Speaking
+    7400008: Green - Start Speak
+    7400010: Green - Walk
+    9500000: //RootNode
+    13700000: Green
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tr0038_00_Body.tga
+    second: {fileID: 2100000, guid: f37af61a400128f4d95e0c04484d74b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tr0038_00_Eye.tga
+    second: {fileID: 2100000, guid: 3aa89db04d57d884098d1aef7f8befdf, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Green - End Speak
+      takeName: Green_skeleton|End speak
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Green - Idle
+      takeName: Green_skeleton|Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Green - Run
+      takeName: Green_skeleton|Run
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Green - Speaking
+      takeName: Green_skeleton|Speaking
+      firstFrame: 0
+      lastFrame: 84
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Green - Start Speak
+      takeName: Green_skeleton|Start speak
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Green - Walk
+      takeName: Green_skeleton|Walk
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0001
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

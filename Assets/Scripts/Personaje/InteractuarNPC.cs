@@ -13,7 +13,8 @@ public class InteractuarNPC : Interaccion {
 	}
 
 	//Variables
-	public string[] dialogosvarios;
+	public string nombre;
+	public string[] dialogosVarios;
 	public Queue<string> colaDialogos;
 	public Text dialogos;
 	public string fileName;
@@ -62,13 +63,13 @@ public class InteractuarNPC : Interaccion {
 
 		var i = -1;
 
-		dialogosvarios[0] = mySave.s1;
-		dialogosvarios[1] = mySave.f1;
+		dialogosVarios[0] = mySave.s1;
+		dialogosVarios[1] = mySave.f1;
 
-		foreach(string frase in dialogosvarios)
+		foreach(string frase in dialogosVarios)
 		{
 			i ++;
-			colaDialogos.Enqueue(dialogosvarios[i]);
+			colaDialogos.Enqueue(dialogosVarios[i]);
 		}
 	}
 

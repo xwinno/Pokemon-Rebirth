@@ -13,7 +13,9 @@ public class GuardarPosicion : MonoBehaviour {
 
 	void Awake()
 	{
+		//Proporciona la direccion de las partidas guardas
 		filePath = Application.persistentDataPath + "/Save/Posicion.json";
+		
 		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
 		CrearArchivo();
 	}
