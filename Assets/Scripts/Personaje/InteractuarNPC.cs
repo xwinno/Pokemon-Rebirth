@@ -82,16 +82,23 @@ public class InteractuarNPC : Interaccion {
 		if(Input.GetKeyDown(KeyCode.E) && colaDialogos.Count != 0)
 		{
 			Interactuar();
+			
+			//Activa los subtitulos
 			dialogos.gameObject.SetActive(true);
-			dialogos.text = colaDialogos.Dequeue();
 
+			//Muestra el texto
+			dialogos.text = colaDialogos.Dequeue();
+			
+			//Ejecuta la animacion de hablar
 			this.gameObject.GetComponent<Animator>().SetBool("Speaking", true);
 		}
 
 		else if (colaDialogos.Count == 0)
 		{
+			//Desactiva los subtitulos
 			dialogos.gameObject.SetActive(false);
-			
+
+			//Pausa la animacion de hablar
 			this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
 
 			Debug.Log("Done broccoli");
@@ -100,7 +107,14 @@ public class InteractuarNPC : Interaccion {
 
 	void OnTriggerExit(Collider other)
 	{
-			this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
+		//Desactiva los subtitulos
+		dialogos.gameObject.SetActive(false);
+
+		//Limpia la cola
+		colaDialogos.Clear();
+		
+		//Pausa la animacion de hablar
+		this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
 	}
 }
 
