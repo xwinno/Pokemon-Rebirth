@@ -14,6 +14,7 @@ public class GuardarInventario : MonoBehaviour {
 		//Proporciona la direccion de las partidas guardas
 		filePath = Application.persistentDataPath + "/Save/InventorySave.json";
 		
+		//Crea el directorio de guardado
 		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
 		inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventario>();
 		CrearArchivo();

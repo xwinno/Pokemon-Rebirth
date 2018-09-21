@@ -113,7 +113,6 @@ public class MenuInGame : MonoBehaviour {
 			//Sale del modo captura
 			player.GetComponent<CapturaSpawn>().modoCaptura = false;
 			player.GetComponent<CapturaSpawn>().iconoCaptura.enabled = false;
-			player.GetComponent<CapturaSpawn>().consola.gameObject.SetActive(false);
 			player.GetComponent<CapturaSpawn>().enabled = false;
 			player.GetComponent<CameraController>().enabled = false;
 

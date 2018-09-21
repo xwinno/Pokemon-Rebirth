@@ -13,7 +13,7 @@ public class GuardaEquipo : MonoBehaviour {
 		//Proporciona la direccion de las partidas guardas
 		filePath = Application.persistentDataPath + "/Save/TeamSave.json";
 		
-		//Busca el script
+		//Crea el directorio de guardado
 		Directory.CreateDirectory(Application.persistentDataPath + "/Save/");
 	}
 

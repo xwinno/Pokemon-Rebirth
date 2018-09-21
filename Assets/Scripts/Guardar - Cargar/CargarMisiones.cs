@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class CargarPosicion : MonoBehaviour {
-	
-	public GameObject Player;
+public class CargarMisiones : MonoBehaviour {
+
+	public QuestDatabase administrador;
+	public QuestSystem player;
 	string filePath;
 	string readFile;
-	
+
 	void Awake()
 	{
 		//Proporciona la direccion de las partidas guardas
-		filePath = Application.persistentDataPath + "/Save/Posicion.json";
+		filePath = Application.persistentDataPath + "/Save/Misiones.json";
 
 		//Busca si hay una partida guardada.
 		CargarArchivo();
@@ -42,12 +43,21 @@ public class CargarPosicion : MonoBehaviour {
 	}
 	void Load()
 	{
-		Save mySave = JsonUtility.FromJson<Save>(readFile);
+		questActivas mySave = JsonUtility.FromJson<questActivas>(readFile);
 
-		Debug.Log("Cargando Posicion...");
+		Debug.Log("Cargando Misiones...");
 
-		//Carga la posicion del jugador
-		Player.transform.position = mySave.posicion;
-		Player.transform.rotation = mySave.rotacion;	
+		var database = administrador.GetComponent<QuestDatabase>();
+		
+		//Carga las misiones del jugador
+		if(mySave.extingue == true)
+		{
+			player.activeQuests.Add(database.myQuests[1]);
+		}
+
+		if(mySave.trae == true)
+		{
+			player.activeQuests.Add(database.myQuests[2]);
+		}
 	}
 }

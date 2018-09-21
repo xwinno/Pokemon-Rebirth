@@ -18,6 +18,10 @@ public class InteractuarNPC : Interaccion {
 	public Queue<string> colaDialogos;
 	public Text dialogos;
 	public string fileName;
+	public QuestData quest;
+	public bool hadQuest;
+	public GameObject administrador;
+	bool questComplete;
 
 	string filePath;
 	string filePathIdioma;
@@ -73,49 +77,81 @@ public class InteractuarNPC : Interaccion {
 		}
 	}
 
+	void CargarEventos()
+	{
+		if(administrador.GetComponent<EventsManager>().events[quest.numeroMision] == true)
+		{
+			hadQuest = false;
+		}
+	}
+
 	void OnTriggerEnter(Collider other)
 	{
-		CargarTexto();
+		if(other.tag == "Player")
+		{
+			CargarTexto();
+			CargarEventos();
+		}
 	}
 
 	void OnTriggerStay(Collider other)
-	{		
-		if(Input.GetKeyDown(KeyCode.E) && colaDialogos.Count != 0)
+	{	
+		if(other.tag == "Player")
 		{
-			Interactuar();
+			if(Input.GetKeyDown(KeyCode.E) && colaDialogos.Count != 0)
+			{
+				Interactuar();
 			
-			//Activa los subtitulos
-			dialogos.gameObject.SetActive(true);
+				//Activa los subtitulos
+				dialogos.gameObject.SetActive(true);
 
-			//Muestra el texto
-			dialogos.text = colaDialogos.Dequeue();
+				//Muestra el texto
+				dialogos.text = colaDialogos.Dequeue();
 			
-			//Ejecuta la animacion de hablar
-			this.gameObject.GetComponent<Animator>().SetBool("Speaking", true);
-		}
+				//Ejecuta la animacion de hablar
+				this.gameObject.GetComponent<Animator>().SetBool("Speaking", true);
+			}
 
-		else if (colaDialogos.Count == 0)
-		{
-			//Desactiva los subtitulos
-			dialogos.gameObject.SetActive(false);
+			else if (colaDialogos.Count == 0 && hadQuest == false)
+			{
+				//Desactiva los subtitulos
+				dialogos.gameObject.SetActive(false);
 
-			//Pausa la animacion de hablar
-			this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
+				//Pausa la animacion de hablar
+				this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
+			}
 
-			Debug.Log("Done broccoli");
+			else if (colaDialogos.Count == 0 && hadQuest == true)
+			{
+				//Desactiva los subtitulos
+				dialogos.gameObject.SetActive(false);
+
+				//Pausa la animacion de hablar
+				this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
+
+				var playerQuests = GameObject.FindObjectOfType<QuestSystem>();
+				playerQuests.activeQuests.Add(quest);
+				hadQuest = false;
+
+				Debug.Log("Quest activa");
+			}
 		}
 	}
 
 	void OnTriggerExit(Collider other)
 	{
-		//Desactiva los subtitulos
-		dialogos.gameObject.SetActive(false);
-
-		//Limpia la cola
-		colaDialogos.Clear();
 		
-		//Pausa la animacion de hablar
-		this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
+		if(other.tag == "Player")
+		{
+			//Desactiva los subtitulos
+			dialogos.gameObject.SetActive(false);
+
+			//Limpia la cola
+			colaDialogos.Clear();
+		
+			//Pausa la animacion de hablar
+			this.gameObject.GetComponent<Animator>().SetBool("Speaking", false);
+		}
 	}
 }
 

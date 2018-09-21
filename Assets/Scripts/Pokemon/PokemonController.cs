@@ -12,7 +12,7 @@ public class PokemonController : MonoBehaviour {
 	bool pokemonControl;
 	float h;
 	float v;
-	ParticleSystem ps;
+	ParticleSystem[] ps;
 	public float sensibilidadH = 2;
 	public float sensibilidadV = 2;
 	public PokemonData animadoresPokes;
@@ -25,7 +25,7 @@ public class PokemonController : MonoBehaviour {
 		cameraPokemon = this.gameObject.GetComponentInChildren<Camera>();
 		listenerPokemon = this.gameObject.GetComponentInChildren<AudioListener>();
 		animatorPokemon = this.gameObject.GetComponent<Animator>();
-		ps = gameObject.GetComponentInChildren<ParticleSystem>();
+		ps = gameObject.GetComponentsInChildren<ParticleSystem>();
 		
 	}
 	
@@ -35,7 +35,8 @@ public class PokemonController : MonoBehaviour {
 		if(Input.GetMouseButtonUp(0) && pokemonControl == true)
 		{
 			animatorPokemon.SetTrigger("Attack");
-			ps.Play(true);
+			ps[0].Play(true);
+			ps[1].Play(true);
 		}
 
 
@@ -43,7 +44,7 @@ public class PokemonController : MonoBehaviour {
 		{
 			pokemonControl = !pokemonControl;
 			player.GetComponent<CapturaSpawn>().iconoCaptura.enabled = false;
-			player.GetComponent<CapturaSpawn>().consola.gameObject.SetActive(false);
+			//player.GetComponent<CapturaSpawn>().consola.gameObject.SetActive(false);
 
 			//Activa camara, animador y listener pokemon
 			cameraPokemon.enabled = true;

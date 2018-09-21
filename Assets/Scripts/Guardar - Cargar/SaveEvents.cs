@@ -48,8 +48,8 @@ public class SaveEvents : MonoBehaviour {
 		EventsDone mySave = JsonUtility.FromJson<EventsDone>(readFile);
 		
 		//Guarda el equipo del jugador
-		mySave.fuegoApagado = eventsManager.events[0];
-		mySave.plataforma = eventsManager.events[1];
+		mySave.fuegoApagado = eventsManager.events[1];
+		mySave.plataforma = eventsManager.events[2];
 
 		//Guarda la posicion en el archivo
 		var guardar = JsonUtility.ToJson(mySave);

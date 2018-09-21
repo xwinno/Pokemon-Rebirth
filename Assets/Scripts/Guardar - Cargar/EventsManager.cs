@@ -45,14 +45,15 @@ public class EventsManager : MonoBehaviour {
 		Debug.Log("Cargando Eventos...");
 
 		//Carga el equipo del jugador
-		events[0] = mySave.fuegoApagado;
-		events[1] = mySave.plataforma;
+		events[1] = mySave.fuegoApagado;
+		events[2] = mySave.plataforma;
 	}
 }
 
 [System.Serializable]
 public class EventsDone {
 
+	public bool none;
 	public bool fuegoApagado;
 	public bool plataforma;
 
