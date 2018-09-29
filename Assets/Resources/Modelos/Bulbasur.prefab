@@ -203,7 +203,8 @@ GameObject:
   - component: {fileID: 65072131463792258}
   - component: {fileID: 54186702716561848}
   - component: {fileID: 95948182190111700}
-  - component: {fileID: 114191825309326492}
+  - component: {fileID: 195509278571666212}
+  - component: {fileID: 114694700704126412}
   - component: {fileID: 114671095711916480}
   m_Layer: 0
   m_Name: Bulbasur
@@ -877,7 +878,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1206803167906818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5149354, y: 0.019272089, z: -4.4328027}
+  m_LocalPosition: {x: 7.848357, y: 0.019272089, z: 3.57405}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4121772786594352}
@@ -1565,20 +1566,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114191825309326492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1206803167906818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114671095711916480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1596,7 +1583,7 @@ MonoBehaviour:
   velocidad: 4
 --- !u!114 &114678231929698436
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1383978450485218}
@@ -1651,6 +1638,20 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 1
       enableBigTilePrepass: 1
       isFptlEnabled: 1
+--- !u!114 &114694700704126412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1206803167906818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!114 &114761844953494204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1813,3 +1814,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00014202856, y: 0.0036573876, z: 0.0002562194}
     m_Extent: {x: 0.010101672, y: 0.00407812, z: 0.004660115}
   m_DirtyAABB: 0
+--- !u!195 &195509278571666212
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1206803167906818}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.53
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.69
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

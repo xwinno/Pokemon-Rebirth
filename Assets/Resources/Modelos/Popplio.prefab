@@ -884,7 +884,8 @@ GameObject:
   - component: {fileID: 65100507100331990}
   - component: {fileID: 54204599391364824}
   - component: {fileID: 95518581380999018}
-  - component: {fileID: 114914425283575726}
+  - component: {fileID: 195065258249319850}
+  - component: {fileID: 114596845190306078}
   - component: {fileID: 114167504084477476}
   m_Layer: 0
   m_Name: Popplio
@@ -1533,7 +1534,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1882672674844276}
   m_LocalRotation: {x: 0, y: -0.72221434, z: 0, w: -0.6916693}
-  m_LocalPosition: {x: 3.1131604, y: 0.019272089, z: 16.370079}
+  m_LocalPosition: {x: 8.054228, y: 0.019272089, z: 3.35916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4437611866778990}
@@ -2138,6 +2139,20 @@ MonoBehaviour:
   sensibilidadV: 2
   animadoresPokes: {fileID: 11400000, guid: f426968d336c2c64c8326ae2b8316d51, type: 2}
   velocidad: 4
+--- !u!114 &114596845190306078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1882672674844276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!114 &114806275578711354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2195,20 +2210,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 1
       enableBigTilePrepass: 1
       isFptlEnabled: 1
---- !u!114 &114914425283575726
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1882672674844276}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114958454132366926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2362,6 +2363,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000015351456, y: 0.0017772692, z: 0.00040759577}
     m_Extent: {x: 0.0022002012, y: 0.002329767, z: 0.0025416152}
   m_DirtyAABB: 0
+--- !u!195 &195065258249319850
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1882672674844276}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.28
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.41
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!198 &198758567912743988
 ParticleSystem:
   m_ObjectHideFlags: 1

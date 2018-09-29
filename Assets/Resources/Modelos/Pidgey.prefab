@@ -788,7 +788,8 @@ GameObject:
   - component: {fileID: 65671141320394004}
   - component: {fileID: 54995927046748268}
   - component: {fileID: 95426181655682826}
-  - component: {fileID: 114145806397189688}
+  - component: {fileID: 195462371275904306}
+  - component: {fileID: 114462717148532718}
   - component: {fileID: 114423932421561280}
   m_Layer: 0
   m_Name: Pidgey
@@ -1928,7 +1929,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1729136961650358}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0904424, y: 0.344, z: 9.865193}
+  m_LocalPosition: {x: 8.029444, y: 0.263, z: 2.5977046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4158719088655564}
@@ -2056,23 +2057,9 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114145806397189688
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729136961650358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114413878152428238
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1851158582745714}
@@ -2142,6 +2129,20 @@ MonoBehaviour:
   sensibilidadV: 2
   animadoresPokes: {fileID: 11400000, guid: 897522e5ca3db1f41a6def4986b7efe9, type: 2}
   velocidad: 4
+--- !u!114 &114462717148532718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729136961650358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!114 &114946530219909568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2294,3 +2295,24 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00000008800998, y: 0.0010623438, z: 0.00034273707}
     m_Extent: {x: 0.0015285648, y: 0.0029464774, z: 0.001794496}
   m_DirtyAABB: 0
+--- !u!195 &195462371275904306
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729136961650358}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.16
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.54
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

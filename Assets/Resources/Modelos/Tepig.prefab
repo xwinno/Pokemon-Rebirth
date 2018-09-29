@@ -220,7 +220,8 @@ GameObject:
   - component: {fileID: 65588094058607948}
   - component: {fileID: 54080513602353246}
   - component: {fileID: 95038296743385600}
-  - component: {fileID: 114426540635382240}
+  - component: {fileID: 195176760763407272}
+  - component: {fileID: 114886426069584038}
   - component: {fileID: 114014487827347292}
   m_Layer: 0
   m_Name: Tepig
@@ -1535,7 +1536,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1210532345136222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.05492, y: 0.019272089, z: -19.43006}
+  m_LocalPosition: {x: 8.022314, y: 0.019272089, z: 3.308969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4906855942350312}
@@ -1823,7 +1824,7 @@ MonoBehaviour:
   velocidad: 4
 --- !u!114 &114090098460312650
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1979050072289124}
@@ -1878,20 +1879,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 1
       enableBigTilePrepass: 1
       isFptlEnabled: 1
---- !u!114 &114426540635382240
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1210532345136222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114824685792502088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1950,6 +1937,20 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &114886426069584038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1210532345136222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!137 &137758254978580010
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2037,6 +2038,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.00023493782, y: 0.0026532027, z: 0.00023067358}
     m_Extent: {x: 0.0016337154, y: 0.0028305918, z: 0.0032669608}
   m_DirtyAABB: 0
+--- !u!195 &195176760763407272
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1210532345136222}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.31
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.47
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!198 &198295519057315536
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class PokemonController : MonoBehaviour {
 
 	GameObject player;
@@ -9,6 +9,7 @@ public class PokemonController : MonoBehaviour {
 	AudioListener listenerPokemon;
 	Animator animatorPokemon;
 	FollowIA followAI;
+	NavMeshAgent agente;
 	bool pokemonControl;
 	float h;
 	float v;
@@ -25,6 +26,7 @@ public class PokemonController : MonoBehaviour {
 		cameraPokemon = this.gameObject.GetComponentInChildren<Camera>();
 		listenerPokemon = this.gameObject.GetComponentInChildren<AudioListener>();
 		animatorPokemon = this.gameObject.GetComponent<Animator>();
+		agente = this.gameObject.GetComponent<NavMeshAgent>();
 		ps = gameObject.GetComponentsInChildren<ParticleSystem>();
 		
 	}
@@ -56,6 +58,7 @@ public class PokemonController : MonoBehaviour {
 
 			//Desactivar IA pokemon
 			followAI.enabled = false;
+			agente.enabled = false;
 		}
 
 		else if(Input.GetKeyDown(KeyCode.R) && pokemonControl == true)
@@ -72,33 +75,7 @@ public class PokemonController : MonoBehaviour {
 
 			//Desactivar IA pokemon
 			followAI.enabled = true;
-		}
-
-		if(pokemonControl == true)
-		{
-			//Recoje el movimiento del raton
-			h = sensibilidadH * Input.GetAxis("Mouse X");
-			v = sensibilidadV * Input.GetAxis("Mouse Y");
-
-			//Movimiento horizontal
-			transform.Rotate(0,h,0);
-
-			//Movimiento vertical
-			cameraPokemon.transform.Rotate(-v,0,0);
-
-
-			//Recoje los datos del axis
-			float movimiento = Input.GetAxis("Vertical");
-			float strafe = Input.GetAxis("Horizontal");
-
-			//Anima el personaje
-			animatorPokemon.SetFloat("X", strafe);
-			animatorPokemon.SetFloat("Y", movimiento);
-
-			//Aplica el movimiento
-			movimiento *= velocidad * Time.deltaTime;
-			strafe *= velocidad * Time.deltaTime;
-			transform.Translate(strafe,0,movimiento);
+			agente.enabled = true;
 		}
 
 		//Correr
@@ -114,6 +91,35 @@ public class PokemonController : MonoBehaviour {
 			animatorPokemon.SetBool("Walk", true);
 			animatorPokemon.SetBool("Run", false);
 			velocidad = 1;
+		}
+	}
+
+	void FixedUpdate()
+	{
+		if(pokemonControl == true)
+		{
+			//Recoje el movimiento del raton
+			h = sensibilidadH * Input.GetAxis("Mouse X");
+			v = sensibilidadV * Input.GetAxis("Mouse Y");
+
+			//Movimiento horizontal
+			transform.Rotate(0,h,0);
+
+			//Movimiento vertical
+			cameraPokemon.transform.Rotate(-v,0,0);
+
+			//Recoje los datos del axis
+			float movimiento = Input.GetAxis("Vertical");
+			float strafe = Input.GetAxis("Horizontal");
+
+			//Anima el personaje
+			animatorPokemon.SetFloat("X", strafe);
+			animatorPokemon.SetFloat("Y", movimiento);
+
+			//Aplica el movimiento
+			movimiento *= velocidad * Time.deltaTime;
+			strafe *= velocidad * Time.deltaTime;
+			transform.Translate(strafe,0,movimiento);
 		}
 	}
 }

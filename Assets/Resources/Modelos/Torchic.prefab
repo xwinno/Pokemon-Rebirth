@@ -1041,7 +1041,8 @@ GameObject:
   - component: {fileID: 65425070784063066}
   - component: {fileID: 54197467763270298}
   - component: {fileID: 95617169558595498}
-  - component: {fileID: 114026430005062036}
+  - component: {fileID: 195857399899864952}
+  - component: {fileID: 114866265763271814}
   - component: {fileID: 114605560357945742}
   m_Layer: 0
   m_Name: Torchic
@@ -2284,7 +2285,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1815332692383824}
   m_LocalRotation: {x: 0, y: -0.5467874, z: 0, w: -0.8372716}
-  m_LocalPosition: {x: -17.40546, y: 0.019272089, z: -18.296265}
+  m_LocalPosition: {x: 8.059557, y: 0.019272089, z: 3.2821462}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4517409623762488}
@@ -2552,7 +2553,7 @@ Animator:
   m_GameObject: {fileID: 1815332692383824}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9fa05892878cd6741a213e2e74a941e3, type: 3}
-  m_Controller: {fileID: 9100000, guid: 5eca24cf580da2749bc5206251230720, type: 2}
+  m_Controller: {fileID: 9100000, guid: 75569b1cb92f4254ab02e26f0aae3d81, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2561,23 +2562,9 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114026430005062036
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1815332692383824}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114290850537650466
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1186000110220702}
@@ -2647,6 +2634,20 @@ MonoBehaviour:
   sensibilidadV: 2
   animadoresPokes: {fileID: 11400000, guid: c366f3a195b715840b38075e11bd5c30, type: 2}
   velocidad: 1
+--- !u!114 &114866265763271814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1815332692383824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!114 &114927855745817816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2817,6 +2818,27 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000037949183, y: 0.0019948045, z: 0.00011436734}
     m_Extent: {x: 0.0010893277, y: 0.0020776251, z: 0.0012227246}
   m_DirtyAABB: 0
+--- !u!195 &195857399899864952
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1815332692383824}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.13370924
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.41
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!198 &198061862911860972
 ParticleSystem:
   m_ObjectHideFlags: 1

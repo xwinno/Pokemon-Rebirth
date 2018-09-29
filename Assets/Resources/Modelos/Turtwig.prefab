@@ -657,8 +657,9 @@ GameObject:
   - component: {fileID: 65430966665126880}
   - component: {fileID: 54717381868772888}
   - component: {fileID: 95044811717297298}
-  - component: {fileID: 114111264578496878}
+  - component: {fileID: 195130381255210138}
   - component: {fileID: 114175024015285920}
+  - component: {fileID: 114957793904411680}
   m_Layer: 0
   m_Name: Turtwig
   m_TagString: Untagged
@@ -889,7 +890,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1790364134548782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9448724, y: 0.019272089, z: -5.9799466}
+  m_LocalPosition: {x: 8.308309, y: 0.019272089, z: 3.525029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4606668811271710}
@@ -1566,7 +1567,7 @@ Animator:
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114093014032961454
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456982600728102}
@@ -1621,20 +1622,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 1
       enableBigTilePrepass: 1
       isFptlEnabled: 1
---- !u!114 &114111264578496878
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1790364134548782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114175024015285920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1708,6 +1695,20 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &114957793904411680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790364134548782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!137 &137082533608320442
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1790,3 +1791,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000033344375, y: 0.0020046632, z: 0.0005490988}
     m_Extent: {x: 0.0012717433, y: 0.0021499812, z: 0.0020424407}
   m_DirtyAABB: 0
+--- !u!195 &195130381255210138
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1790364134548782}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.259154
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.37
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

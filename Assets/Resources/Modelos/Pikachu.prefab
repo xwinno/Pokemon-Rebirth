@@ -642,7 +642,8 @@ GameObject:
   - component: {fileID: 65484834346341778}
   - component: {fileID: 54429525667840538}
   - component: {fileID: 95579752036655666}
-  - component: {fileID: 114607976658864288}
+  - component: {fileID: 195879419510352278}
+  - component: {fileID: 114344676063348008}
   - component: {fileID: 114231573707947186}
   m_Layer: 0
   m_Name: Pikachu
@@ -1330,7 +1331,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1644563715670476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5649655, y: 0.019272089, z: -4.423343}
+  m_LocalPosition: {x: 8.037249, y: 0.019272089, z: 3.2034123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4024934053938782}
@@ -2110,9 +2111,23 @@ MonoBehaviour:
   sensibilidadV: 2
   animadoresPokes: {fileID: 11400000, guid: de0b43ba68516904384cfa18cd29927a, type: 2}
   velocidad: 4
+--- !u!114 &114344676063348008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1644563715670476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38905dc8666cf18459364a919ef157c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 4
+  runSpeed: 6
+  pauseDistance: 3
 --- !u!114 &114446583152661318
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1395901929910480}
@@ -2167,20 +2182,6 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 1
       enableBigTilePrepass: 1
       isFptlEnabled: 1
---- !u!114 &114607976658864288
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1644563715670476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a924bf73f8eabc74ea3f8ec9fe91c71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadCorrer: 6
-  velocidadAndar: 4
-  distanciaMinima: 2.5
 --- !u!114 &114707158287571102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2338,3 +2339,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0006322609, y: 0.0024255782, z: -0.0005291533}
     m_Extent: {x: 0.002363162, y: 0.0027057768, z: 0.0022792756}
   m_DirtyAABB: 0
+--- !u!195 &195879419510352278
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1644563715670476}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.19
+  m_Speed: 4
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.52
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
